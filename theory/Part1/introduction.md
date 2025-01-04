@@ -20,3 +20,17 @@
 Loream Ipsum - for general text
 
 ## Self-closing tags
+```
+<hr/>
+/ - forward slash
+\ - back slash
+<br />
+
+```
+
+https://www.diffchecker.com/
+- check different between two text
+
+## Top movies project
+https://www.rogerebert.com/reviews
+
