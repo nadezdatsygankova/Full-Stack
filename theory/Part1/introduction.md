@@ -50,3 +50,17 @@ My project - https://github.com/nadezdatsygankova/Full-Stack/tree/main/top%20mov
 </ol>
 
 ```
+Project ->
+
+## Nesting and indenting
+```
+<ul>
+  <li> hi </li>
+  <li> this </li>
+    <ol>
+      <li> h1 </li>
+      <li> h4 </li>
+    </ol>
+</ul>
+
+```
