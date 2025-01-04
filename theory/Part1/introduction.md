@@ -64,3 +64,15 @@ Project ->
 </ul>
 
 ```
+Project ->
+
+## Anchor element
+
+```
+<tag attribute=value> Content </tag>
+
+<a href= "https://www.superteacherworksheets.com/generator-word-search.html">Link </a>
+
+
+```
+global attribute - for all tags
