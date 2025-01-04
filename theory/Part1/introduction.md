@@ -76,3 +76,27 @@ Project ->
 
 ```
 global attribute - for all tags
+
+Project - Anchor
+
+## Images
+
+```
+<img src="URL" alt = "text" /> //void element
+```
+
+```
+https://picsum.photos/images/200
+
+where 200 -size of the image
+```
+
+https://picsum.photos/images
+
+alt - tools -  Silktide Toolbar
+
+Project - Dog/Cat person
+
+##
+
+
