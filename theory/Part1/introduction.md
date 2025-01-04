@@ -50,3 +50,53 @@ My project - https://github.com/nadezdatsygankova/Full-Stack/tree/main/top%20mov
 </ol>
 
 ```
+Project ->
+
+## Nesting and indenting
+```
+<ul>
+  <li> hi </li>
+  <li> this </li>
+    <ol>
+      <li> h1 </li>
+      <li> h4 </li>
+    </ol>
+</ul>
+
+```
+Project ->
+
+## Anchor element
+
+```
+<tag attribute=value> Content </tag>
+
+<a href= "https://www.superteacherworksheets.com/generator-word-search.html">Link </a>
+
+
+```
+global attribute - for all tags
+
+Project - Anchor
+
+## Images
+
+```
+<img src="URL" alt = "text" /> //void element
+```
+
+```
+https://picsum.photos/images/200
+
+where 200 -size of the image
+```
+
+https://picsum.photos/images
+
+alt - tools -  Silktide Toolbar
+
+Project - Dog/Cat person
+
+##
+
+
