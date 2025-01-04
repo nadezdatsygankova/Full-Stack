@@ -97,6 +97,19 @@ alt - tools -  Silktide Toolbar
 
 Project - Dog/Cat person
 
-##
+## file path
+
+absolute path
+
+C://users//docement
+
+relative path
+
+../absi -> go to up
+
+./ ->
+
+## webpages
+
 
 
