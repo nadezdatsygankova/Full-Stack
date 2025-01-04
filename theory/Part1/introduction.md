@@ -34,3 +34,19 @@ https://www.diffchecker.com/
 ## Top movies project
 https://www.rogerebert.com/reviews
 
+My project - https://github.com/nadezdatsygankova/Full-Stack/tree/main/top%20movies
+## The list element
+```
+//unordered list
+<ul>
+  <li> hi </li>
+  <li> this </li>
+</ul>
+
+//ordered list
+<ol>
+  <li> hi </li>
+  <li> this </li>
+</ol>
+
+```
