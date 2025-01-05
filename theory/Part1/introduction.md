@@ -111,5 +111,25 @@ relative path
 
 ## webpages
 
+Project is
+
+## The HTML BoilerPlate
+
+```
+
+<!DOCTYPE html> - which version of HTML file
+<html lang="en"> - root of the document, language = en
+<head>
+  <meta charset="UTF-8"> - characters display correctly
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> - how to display web page 
+  <title>Document</title> - what to display on the tab part
+</head>
+<body>
+</body>
+</html>
+```
+
+
+
 
 
