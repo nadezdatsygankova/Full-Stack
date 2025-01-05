@@ -121,13 +121,34 @@ Project is
 <html lang="en"> - root of the document, language = en
 <head>
   <meta charset="UTF-8"> - characters display correctly
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> - how to display web page 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> - how to display web page
   <title>Document</title> - what to display on the tab part
 </head>
 <body>
 </body>
 </html>
 ```
+### Project - Portfolio
+
+### Hosting to webserver
+
+local development - all my files in local computer
+
+all files we put in web server - this is web hosting
+
+git hub - new repository, public
+index.html and other pages upload
+after files are uploaded
+settings - pages
+branch - main -
+we got URL for website
+
+
+### capstone project
+
+
+
+
 
 
 
