@@ -237,7 +237,25 @@ p[draggable = "true"]{
 *{
   color:red;
   }
-  
+```
+Project ->
+
+## CSS Properties
+
+### CSS Colors
+
+property - value
+
+```
+background-color: red;
+color: blue;
+```
+https://colorhunt.co/
+color helpful
+
+### font properties
+
+
 
 
 
