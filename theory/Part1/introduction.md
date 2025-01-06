@@ -145,6 +145,104 @@ we got URL for website
 
 
 ### capstone project
+=>
+
+### css
+Cascading style sheets - style of the web page
+
+Style sheets languages:
+- CSS
+- Sass
+- Less
+and others
+
+we can add css files:
+
+1. inline
+just adding css for a single element
+```
+<tag style='css' />
+
+<html style ="background:green"></html>
+```
+
+2. internal
+```
+<head>
+<style>
+body{
+  background:blue;
+  }
+</style>
+
+<style>css</style>
+```
+3.external
+
+we have a file style.css
+
+rel - relationship
+href - hyperlink reference
+```
+<head>
+<link rel='stylesheet' type='text/css' href='style.css'/>
+</head>
+
+<link href="style.css"/>
+
+```
+## css selector
+
+### element selector
+```
+h1
+p
+```
+### class selector
+
+```
+.red-heading{
+  color:red;
+}
+```
+## id selector
+
+```
+#main{
+  color:red;
+}
+```
+## attribute selector
+```
+[title]
+[title='hello']
+[title='hello' lang='en']
+
+p[draggable]{
+  color:red;
+}
+
+p - html element
+[draggable] - attribute
+
+p[draggable = "true"]{
+  color:red;
+}
+
+```
+
+### universal selector
+
+```
+*{
+  color:red;
+  }
+  
+
+
+
+
+
 
 
 
