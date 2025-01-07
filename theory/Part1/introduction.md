@@ -309,6 +309,47 @@ Control+C -> hover
 
 Project ->
 
+## Intermediate CSS
+### css cascade
+
+1. external style
+2. inline style
+
+
+-> position
+what is the position in document of the rule?
+```
+li {
+  color: red;
+  color: blue;-> this is will be
+}
+
+```
+-> specificity
+
+```
+li{color: blue;} -> element selector
+.first-class{color:red;} -> class selector
+li[draggable]{color: purple;} -> attribute selector
+#first-id{color: orange;} -> id selector
+```
+-> type
+
+```
+<link rel="stylesheet" href="./style.css"> - external file
+<style></style> - internal
+<h1 style="color:red;">Hello</h1> - inline style - most important
+
+```
+-> importance
+```
+color: red !important;
+
+```
+![Rules](../Part1/rules.jpeg "Rules")
+
+
+
 
 
 
