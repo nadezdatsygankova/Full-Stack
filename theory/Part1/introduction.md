@@ -255,6 +255,47 @@ color helpful
 
 ### font properties
 
+```
+font-weight: bold;
+font-style: italic;
+font-size: 20px;
+font-family: Arial;
+
+```
+1px (pixel) - 1/96th inch - 0.26 mm
+1pt (point) -word document the same - 1/72th inch - 0.35 mm
+1em - 100% of parent
+1rem - 100% of root - relative to root - better use it
+
+sans-serif
+serif (with some крючочки)
+
+```
+text-align: center;
+text-decoration: underline;
+
+```
+
+### CSS inspection
+Option+ command +I
+F12
+
+-> you can use inspect - ... -> CSS Overview
+-> you can see all the CSS properties
+-> you can edit them
+-> you can add new ones
+-> you can delete them
+
+
+### the box model
+
+```
+border: 10px solid black;
+
+```
+
+
+
 
 
 
