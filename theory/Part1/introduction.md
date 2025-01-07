@@ -294,6 +294,26 @@ border: 10px solid black;
 
 ```
 
+#### content division element
+
+```
+<div>
+Hello
+</div>
+
+```
+
+Pesticide chrome extension for debugging code
+
+Control+C -> hover
+
+Project ->
+
+
+
+
+
+
 
 
 
