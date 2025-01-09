@@ -349,8 +349,40 @@ color: red !important;
 ![Rules](../Part1/rules.jpeg "Rules")
 
 
+### combining css
+```
+<div class= "inner-box" >
+    <p>Text</p>
+</div>
 
+.inner-box p {
+  color: red;
+}
+```
 
+#### group rule = apply to both selectors
+
+```
+selector, selector {
+  property: value;
+}
+
+```
+
+#### child rule = apply to direct child of left side
+
+```
+.parent > .child {
+  property: value;
+  }
+
+selector > selector{
+  color: red;
+}
+
+```
+
+#### descendant
 
 
 
