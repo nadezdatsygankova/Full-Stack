@@ -382,10 +382,40 @@ selector > selector{
 
 ```
 
-#### descendant
+#### descendant = apply to descendant of left side
 
+```
+selector selector {
+  property: value;
+}
 
+in all descendant
 
+```
+
+#### chaining selector = apply where ALL selectors are true
+- no space
+add h1#id.class
+start with element
+
+```
+selectorselector{
+  property: value;
+}
+
+h1#first.same{
+  color: red;
+}
+
+```
+#### combining combiners
+
+```
+selector selectorselector {
+  property: value;
+  }
+
+```
 
 
 
