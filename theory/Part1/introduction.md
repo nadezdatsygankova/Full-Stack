@@ -439,6 +439,8 @@ position: relative;
 ```
 
 #### absolute
+- we need to add  position:relative  to the parent
+
 - position relative to nearest positioned ancestor or top left corner of the website
 
 ```
