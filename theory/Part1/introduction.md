@@ -382,10 +382,86 @@ selector > selector{
 
 ```
 
-#### descendant
+#### descendant = apply to descendant of left side
+
+```
+selector selector {
+  property: value;
+}
+
+in all descendant
+
+```
+
+#### chaining selector = apply where ALL selectors are true
+- no space
+add h1#id.class
+start with element
+
+```
+selectorselector{
+  property: value;
+}
+
+h1#first.same{
+  color: red;
+}
+
+```
+#### combining combiners
+
+```
+selector selectorselector {
+  property: value;
+  }
+
+```
+
+### CSS position
+
+#### static - HTML default
+- no positioning
+- no offset parent
+- no z-index
+- no clipping
+- no scrolling
+- no transform
+- no transition
+- no animation
+https://appbrewery.github.io/css-positioning/
 
 
+#### relative - position relative to default
+position relative to default
+```
+position: relative;
 
+```
+
+#### absolute
+- position relative to nearest positioned ancestor or top left corner of the website
+
+```
+position: absolute;
+z-index: 1000;
+```
+
+#### fixed
+- position relative to viewport
+- always on top
+- no scrolling
+
+```
+position: fixed;
+
+```
+
+
+#### sticky
+```
+
+```
+#### relative and absolute
 
 
 
