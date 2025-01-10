@@ -457,13 +457,9 @@ z-index: 1000;
 position: fixed;
 
 ```
+### css display
 
 
-#### sticky
-```
-
-```
-#### relative and absolute
 
 
 
