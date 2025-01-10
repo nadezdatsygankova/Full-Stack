@@ -524,6 +524,29 @@ footer{
   clear:both;
   }
 ```
+### responsive design
+
+#### media-query
+
+below or equal 768 px
+```
+@media (max-width: 768px) {
+  .container {
+      width:500px;
+  }
+}
+
+```
+#### css grid
+
+```
+
+```
+
+#### css flex-box
+
+#### external frameworks e.g bootstrap
+
 
 
 
