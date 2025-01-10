@@ -459,6 +459,45 @@ position: fixed;
 ```
 ### css display
 
+#### inline
+the same line
+- you can't add width and hight
+- size = content
+
+```
+span {
+  display: inline;
+}
+
+```
+
+#### block
+
+```
+default
+h1 {
+  display: block;
+}
+
+```
+#### inline-block
+- can have width and height
+- can have margin and padding
+- can go inline
+- can go block
+
+#### none
+- no display
+- no space
+- no margin
+```
+display: none;
+
+```
+https://appbrewery.github.io/css-display/
+
+
+
 
 
 
