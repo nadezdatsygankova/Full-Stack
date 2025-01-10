@@ -497,6 +497,37 @@ display: none;
 https://appbrewery.github.io/css-display/
 
 
+### css float
+wrapping text around element
+
+```
+img {
+  float: left;
+  }
+
+  ```
+  text will be all around img
+
+img and paragraph are
+
+display:block;
+
+if we don't want wrapping around after text
+
+```
+footer{
+  clear:left;
+}
+
+or
+footer{
+  clear:both;
+  }
+```
+
+
+
+
 
 
 
