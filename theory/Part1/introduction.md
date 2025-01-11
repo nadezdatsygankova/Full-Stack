@@ -550,8 +550,40 @@ below or equal 768 px
 
 ### media queries
 
+all bigger that 600px
 
+```
+@media (min-width: 600px) {
+  .container {
+    width:800px;
+    }
+}
 
+```
+all the less than 600px
+```
+@media (max-width: 600px) {
+  .container {
+    width:400px;
+    }
+
+}
+```
+you can combine them
+
+```
+@media (max-width: 600px) and (orientation: landscape) {
+  .container {
+
+      width:45px;
+  }
+}
+```
+
+ Mobile Devices: 319px — 480px
+ iPads and Tablets: 481px — 1200px
+ Laptops: 1201px — 1600px
+ Desktops: 1601px and more
 
 
 
