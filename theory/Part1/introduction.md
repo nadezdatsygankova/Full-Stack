@@ -588,10 +588,43 @@ you can combine them
 
 ### css flexbox
 
+float only great if you want to float an image to the left or the light of a block of text to the wrap the text around.
 
 
 
+```
 
+<div class="container">
+   <div class="item">1</div>
+   <div class="item">2</div>
+   <div class="item">3</div>
+</div>
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  gap: 10px;
+}
+
+```
+
+```
+<div> block element </div>
+<p> block element </p>
+<span> inline element </span>
+<a> inline element </a>
+<img> inline element </img>
+
+```
+
+if display: flex
+container occupied 100% width
+if display: inline-flex
+container occupied width of content
 
 
 
