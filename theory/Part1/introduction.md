@@ -719,8 +719,56 @@ height: 70vh;
 
 https://appbrewery.github.io/flexboxfroggy/
 
+#### flex sizing
 
+by default
+flex items will take up as much space as they need
+if there is extra space, it will be distributed evenly
 
+content width < width< flex-basic < min-width/max-width
+min-width- longest word - how small they can shrink to
+max-width - longest possible line of the text - max to grow
+
+```
+
+flex-grow: 0 or 1; (yes or not) -max-width
+flex-shrink: 0 or 1; - min-width
+
+flex-basic:0
+
+flex: 1 1 0; === flex:1;
+first - grow
+second - shrink
+third - basic
+if you want equal - basic:0;
+default  basic:auto - more space to more content
+```
+```
+/* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
+
+.container {
+  display:flex;
+  justify-content:space-between;
+}
+
+.container > * {
+}
+
+.item1 {
+flex-basic:200px;
+}
+
+.item2 {
+flex-basic:200px;
+flex-shrink:0;
+}
+
+.item3 {
+flex-basic:200px;
+flex-shrink:0;
+}
+
+```
 
 
 
