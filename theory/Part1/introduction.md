@@ -640,7 +640,7 @@ from top to bottom
 flex-basic: 100px; on the child element
 
 #### flex layout
-
+##### order
 ```
 be default
 
@@ -652,7 +652,7 @@ if we set .green
 }
 ```
 
-flex-wrap
+##### flex-wrap
 
 ```
 be default
@@ -664,7 +664,7 @@ property for parent-
     flex-wrap: wrap;
 
 ```
-
+##### justify-content
 ```
 for parent
 justify-content: flex-start;
@@ -675,7 +675,49 @@ justify-content: space-around;
 justify-content: space-evenly;
 
 ```
+##### align-items
+```
+for parent
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: baseline;
+align-items: stretch;
 
+we need to set height for container
+
+height: 70vh; - viewport height
+it should be no wrap
+flex-wrap: no-wrap;
+
+----
+***
+align-items: flex-start;
+height: 70vh;
+flex-wrap: no-wrap;
+
+---
+
+if you need to set for specific item
+align-self: flex-start;
+```
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+##### align-content
+only works
+
+```
+for parent
+
+align-content: flex-start;
+flex-wrap: wrap;
+height: 70vh;
+
+```
+
+https://appbrewery.github.io/flexboxfroggy/
 
 
 
