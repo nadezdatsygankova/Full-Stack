@@ -759,12 +759,12 @@ flex-basic:200px;
 }
 
 .item2 {
-flex-basic:200px;
+flex-basis:200px;
 flex-shrink:0;
 }
 
 .item3 {
-flex-basic:200px;
+flex-basis:200px;
 flex-shrink:0;
 }
 
