@@ -588,6 +588,8 @@ you can combine them
 
 ### css flexbox
 
+#### flexbox
+
 float only great if you want to float an image to the left or the light of a block of text to the wrap the text around.
 
 
@@ -626,10 +628,53 @@ container occupied 100% width
 if display: inline-flex
 container occupied width of content
 
+#### flex direction
 
+be default
+flex-direction: row
 
+if we set
+flex-direction: column
+from top to bottom
 
+flex-basic: 100px; on the child element
 
+#### flex layout
+
+```
+be default
+
+order: 0;
+
+if we set .green
+{
+  order:1; - it will be last one
+}
+```
+
+flex-wrap
+
+```
+be default
+flex-wrap: no-wrap;
+
+you can use to next
+property for parent-
+
+    flex-wrap: wrap;
+
+```
+
+```
+for parent
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+
+```
 
 
 
