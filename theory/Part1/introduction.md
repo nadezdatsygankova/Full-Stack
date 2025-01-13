@@ -769,7 +769,27 @@ flex-shrink:0;
 }
 
 ```
+### css grid
 
+Flexbox
+- inline content
+- one dimension
+- horizontal or vertical
+
+Grid
+- block content
+- two dimensions
+- horizontal and vertical
+
+```
+.container {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap:10px;
+  }
+
+  ```
 
 
 
