@@ -820,6 +820,46 @@ fractional size
   }
   ```
 
+  ```
+  .container {
+    display:grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 200px minmax(400px, 800px);
+  }
+
+.container{
+  display:grid;
+  grid-template-columns: repeat (2, 200px); //200px 200px
+  grid-template-rows: repeat(2, 200px); // 200px 200px
+
+}
+
+```
+automaticaly
+
+```
+.container {
+  display:grid;
+  grid-template-columns: auto 200px auto;
+  grid-template-rows: auto 200px auto;
+  grid-auto-rows: 400px;
+  }
+
+  ```
+
+  inspector -> grid layout
+
+  ```
+  .grid-container {
+display:grid;
+grid-template-columns: auto 400px minmax(200px, 500px);
+grid-template-rows: 1fr 1fr 2fr;
+grid-auto-rows: 50px;
+
+}
+
+  ```
+
 
 
 
