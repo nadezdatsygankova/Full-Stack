@@ -791,6 +791,36 @@ Grid
 
   ```
 
+  #### grid size
+
+  ```
+  .container {
+    display:grid;
+    <!-- first rows/column -->
+    grid-template: 200px 200px / 300px 300px;
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns: 100px auto; //100%
+      grid-template-rows: 100px auto; // fit content
+
+    }
+
+    ```
+
+https://appbrewery.github.io/grid-sizing/
+
+fractional size
+
+```
+.container {
+  display:grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  }
+  ```
+
+
 
 
 
