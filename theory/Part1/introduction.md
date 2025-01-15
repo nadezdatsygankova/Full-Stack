@@ -807,7 +807,7 @@ Grid
 
     }
 
-    ```
+```
 
 https://appbrewery.github.io/grid-sizing/
 
@@ -818,9 +818,7 @@ fractional size
   display:grid;
   grid-template-columns: 1fr 2fr 3fr;
   }
-  ```
 
-  ```
   .container {
     display:grid;
     grid-template-columns: 200px 400px;
@@ -833,7 +831,6 @@ fractional size
   grid-template-rows: repeat(2, 200px); // 200px 200px
 
 }
-
 ```
 automaticaly
 
@@ -845,11 +842,11 @@ automaticaly
   grid-auto-rows: 400px;
   }
 
-  ```
+```
 
   inspector -> grid layout
 
-  ```
+```
   .grid-container {
 display:grid;
 grid-template-columns: auto 400px minmax(200px, 500px);
@@ -858,7 +855,19 @@ grid-auto-rows: 50px;
 
 }
 
-  ```
+```
+
+#### grid item placement
+
+row tracks
+column tracks
+grid cells
+grid lines (gap)
+grid items
+grid container
+
+
+
 
 
 
