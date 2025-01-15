@@ -866,6 +866,20 @@ grid lines (gap)
 grid items
 grid container
 
+```
+.grid-container {
+  display:grid;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 200px 400px;
+  grid-gap: 10px;
+  }
+  .grid-item{
+    grid-column-start: 1 ///left
+    grid-column-end: -1 ///right
+  }
+
+  grid-column: span 2;
+  order: 1;- go to the end of the grid
 
 
 
