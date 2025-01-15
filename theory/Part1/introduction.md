@@ -847,7 +847,7 @@ automaticaly
   inspector -> grid layout
 
 ```
-  .grid-container {
+.grid-container {
 display:grid;
 grid-template-columns: auto 400px minmax(200px, 500px);
 grid-template-rows: 1fr 1fr 2fr;
@@ -866,6 +866,31 @@ grid lines (gap)
 grid items
 grid container
 
+```
+.grid-container {
+  display:grid;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 200px 400px;
+  grid-gap: 10px;
+  }
+  .grid-item{
+    grid-column-start: 1 ///left
+    grid-column-end: -1 ///right
+  }
+
+  grid-column: span 2;
+  order: 1;- go to the end of the grid
+
+
+grid-area: 2 / 1 / 3 /3;
+grid-row-start: 2;
+grid-column-start: 1;
+grid-row-end: 3;
+grid-column-end: 3;
+
+https://appbrewery.github.io/gridgarden/
+
+```
 
 
 
