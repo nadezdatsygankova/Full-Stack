@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 6.5fr 4fr 3fr 1fr;
+      grid-template-rows: 40fr 6fr 7fr 1fr;
+      width: 748px;
+      height: 748px;
+      margin: 0 auto;
+      gap: 9px;
+      background: #232629;
+    }
+    .grid-item {
+      background-color: #dfe0db;
+    }
+    .grey{
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .blue{
+      background-color: #004592;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .red{
+      background-color: #E72F24;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .grey2{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .grey3{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .grey4{
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 5;
+      grid-column-end: 6;
+    }
+    .orange{
+      background-color: #F2994A;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .black{
+      background-color: #232629;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    .grey5{
+      grid-row-start: 3;
+      grid-row-end: 5;
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    .grey6{
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="grid-container">
+    <div class="grid-item red"></div>
+    <div class="grid-item grey"></div>
+    <div class="grid-item grey2"></div>
+    <div class="grid-item grey3"></div>
+    <div class="grid-item blue"></div>
+    <div class="grid-item grey4"></div>
+    <div class="grid-item grey6"></div>
+    <div class="grid-item orange"></div>
+    <div class="grid-item black"></div>
+    <div class="grid-item grey5"></div>
+   </div>
+</body>
+
+</html>
