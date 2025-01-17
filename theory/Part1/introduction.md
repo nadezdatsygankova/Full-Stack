@@ -917,8 +917,12 @@ col-6
 
 
 #### bootstrap component
+```
+<html lang="en" data-bs-theme="dark"> // dark mode
+```
+https://www.w3schools.com/bootstrap/bootstrap_templates.asp
 
-
+free bootstrap templates
 
 
 
