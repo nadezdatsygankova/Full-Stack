@@ -911,6 +911,12 @@ css framework
 
 ```
 
+col-lg-2
+col-sm-4
+col-6
+
+
+#### bootstrap component
 
 
 
