@@ -1006,6 +1006,29 @@ Contrast
  1. hierarchy
    - most important information go first
    - use size, colour, and position to create hierarchy
+2. Layout
+- use grid to create layout
+- use white space to create balance
+- use alignment to create order
+40 characters per line
+
+3. Alignment
+- left
+- right
+- center
+
+
+- it is better in one line - left
+4. White space
+- use it to create balance
+- use it to create hierarchy
+- use it to create order
+
+5. Audience
+- know who is the audience
+- know what is the audience need
+
+
 
 
 
