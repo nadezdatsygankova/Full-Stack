@@ -1045,8 +1045,12 @@ Contrast
   - use same design for all device
 
 remove all banners on mobile
--- don't use your powers for evil 
+-- don't use your powers for evil
 
+#### tasks
+https://www.dailyui.co/
+examples
+https://collectui.com/
 
 
 
