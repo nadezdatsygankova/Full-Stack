@@ -1053,6 +1053,13 @@ examples
 https://collectui.com/
 
 
+font - cardo
+subtitle - glacial indifference
+
+
+website - https://nadiatsy.my.canva.site/
+
+
 
 
 
