@@ -968,6 +968,50 @@ https://colorhunt.co/
 
 #### typography
 
+- serif
+  - more serious
+  - more formal
+  - more traditional
+  - more classic
+
+  * old style
+  * transitional
+  * modern
+  * didone
+  * slab serif
+
+  San-serif
+  - more modern
+  - more clean
+  - more simple
+  - more minimal
+  start up loves using this type
+   * humanist - very clear- readable
+   * geometric
+
+- 2 fonts in one design
+  - 1 font for headings
+  - 1 font for body
+
+Similar
+ * mood
+ * time era
+
+Contrast
+ * serif-ness
+ * weight
+
+ #### user interface design
+
+ 1. hierarchy
+   - most important information go first
+   - use size, colour, and position to create hierarchy
+
+
+
+
+
+
 
 
 
