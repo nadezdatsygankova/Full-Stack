@@ -924,6 +924,44 @@ https://www.w3schools.com/bootstrap/bootstrap_templates.asp
 
 free bootstrap templates
 
+### design website
+
+#### colour theory
+
+red- love. energy. intensity
+orange- warmth. excitement. creativity
+yellow- joy. intellect. attention
+green- freshness. safety. growth
+blue- stability. trust. serenity
+purple- luxury. creativity. wisdom
+pink- playfulness. femininity. sweetness
+brown- earthiness. reliability. comfort
+grey- neutrality. balance. sophistication
+black- elegance. power. sophistication
+white- purity. innocence. simplicity
+
+In design we use 2 or 3 colours
+1. primary colour
+2. secondary colour
+3. accent colour
+4. background colour
+5. text colour
+6. hover colour
+7. active colour
+8. focus colour
+9. disabled colour
+10. error colour
+
+- analogous colour
+ - so close colours
+ * navigation bar
+ * footer
+ * background
+- complementary colour
+  - opposite colours
+
+
+
 
 
 
