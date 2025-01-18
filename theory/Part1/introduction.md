@@ -1028,9 +1028,29 @@ Contrast
 - know who is the audience
 - know what is the audience need
 
+#### user experience design
+1. user flow
+- create a flow chart to show how user interact with the system
+2. user journey
+- create a story to show how user interact with the system
+3. user research
 
+-- simplicity
+-- consistency
+-- reading patterns
+   - use F layout
+   or use Z pattern
+-- all platform design
+  - use same design for all platform
+  - use same design for all device
 
+remove all banners on mobile
+-- don't use your powers for evil
 
+#### tasks
+https://www.dailyui.co/
+examples
+https://collectui.com/
 
 
 
