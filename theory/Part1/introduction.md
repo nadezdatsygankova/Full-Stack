@@ -924,6 +924,119 @@ https://www.w3schools.com/bootstrap/bootstrap_templates.asp
 
 free bootstrap templates
 
+### design website
+
+#### colour theory
+
+red- love. energy. intensity
+orange- warmth. excitement. creativity
+yellow- joy. intellect. attention
+green- freshness. safety. growth
+blue- stability. trust. serenity
+purple- luxury. creativity. wisdom
+pink- playfulness. femininity. sweetness
+brown- earthiness. reliability. comfort
+grey- neutrality. balance. sophistication
+black- elegance. power. sophistication
+white- purity. innocence. simplicity
+
+In design we use 2 or 3 colours
+1. primary colour
+2. secondary colour
+3. accent colour
+4. background colour
+5. text colour
+6. hover colour
+7. active colour
+8. focus colour
+9. disabled colour
+10. error colour
+
+- analogous colour
+ - so close colours
+ * navigation bar
+ * footer
+ * background
+- complementary colour
+  - opposite colours
+* icon
+* button
+
+https://color.adobe.com/create/color-wheel
+
+https://colorhunt.co/
+
+#### typography
+
+- serif
+  - more serious
+  - more formal
+  - more traditional
+  - more classic
+
+  * old style
+  * transitional
+  * modern
+  * didone
+  * slab serif
+
+  San-serif
+  - more modern
+  - more clean
+  - more simple
+  - more minimal
+  start up loves using this type
+   * humanist - very clear- readable
+   * geometric
+
+- 2 fonts in one design
+  - 1 font for headings
+  - 1 font for body
+
+Similar
+ * mood
+ * time era
+
+Contrast
+ * serif-ness
+ * weight
+
+ #### user interface design
+
+ 1. hierarchy
+   - most important information go first
+   - use size, colour, and position to create hierarchy
+2. Layout
+- use grid to create layout
+- use white space to create balance
+- use alignment to create order
+40 characters per line
+
+3. Alignment
+- left
+- right
+- center
+
+
+- it is better in one line - left
+4. White space
+- use it to create balance
+- use it to create hierarchy
+- use it to create order
+
+5. Audience
+- know who is the audience
+- know what is the audience need
+
+
+
+
+
+
+
+
+
+
 
 
 
