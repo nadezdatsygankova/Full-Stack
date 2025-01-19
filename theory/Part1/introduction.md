@@ -1150,9 +1150,52 @@ let name = "Nadia"
 alert(message +" "+ name);
 ```
 
+### length
+number of characters inside variables or word
 
+```
+let name = "Nadia"
+console.log(name.length);
 
+//task
+let text = prompt("Your text");
+alert(text.length);
+alert(280-text.length);
 
+```
+### slicing and extracting parts of string
+- slicing
+
+```
+let name = "Nadia"
+console.log(name.slice(0,3)); //Nad
+
+tasks
+let text = prompt("Your text");
+let textAfterSlice=(text.slice(0,184));
+alert(textAfterSlice);
+
+```
+### changing casing in text
+- toUpperCase()
+- toLowerCase()
+
+```
+let name = "Nadia"
+console.log(name.toUpperCase()); //NADIA
+console.log(name.toLowerCase()); //nadia
+
+```
+```
+let text = prompt("Your name");
+let lengthText = text.length;
+let secondPartOfText = text.slice(1,lengthText)
+
+alert("Hello, " + text.slice(0,1).toUpperCase() + secondPartOfText.toLowerCase());
+
+```
+87
+### basic arithmetics and the modulo operator
 
 
 
