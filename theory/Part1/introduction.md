@@ -1156,6 +1156,12 @@ number of characters inside variables or word
 ```
 let name = "Nadia"
 console.log(name.length);
+
+//task
+let text = prompt("Your text");
+alert(text.length);
+alert(280-text.length);
+
 ```
 
 
