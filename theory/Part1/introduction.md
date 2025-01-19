@@ -1142,6 +1142,14 @@ camel casing
 - example: `let firstName = "John";`
 - example: `let isMarried = true;`
 - example: `let ageClient = 30;`
+### strings
+- concatenation
+```
+let message = "Hello!"
+let name = "Nadia"
+alert(message +" "+ name);
+```
+
 
 
 
