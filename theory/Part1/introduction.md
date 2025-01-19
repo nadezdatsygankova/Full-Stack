@@ -1150,7 +1150,13 @@ let name = "Nadia"
 alert(message +" "+ name);
 ```
 
+### length
+number of characters inside variables or word
 
+```
+let name = "Nadia"
+console.log(name.length);
+```
 
 
 
