@@ -1123,6 +1123,30 @@ b=c;
 ```
 ### naming and naming convention for javascript variables
 
+cleaning - command + K
+
+snippet - long click to reload button- empty cache and hard reload
+```
+let name = "John";
+let age = 30;
+let isMarried = true;
+```
+name can contains
+- number + letters + $ + _
+- cannot start with number
+- cannot contain space
+- cannot contain special character except $ and _
+camel casing
+- first letter is lowercase
+- first letter of each word is uppercase
+- example: `let firstName = "John";`
+- example: `let isMarried = true;`
+- example: `let ageClient = 30;`
+
+
+
+
+
 
 
 
