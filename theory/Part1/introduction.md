@@ -1082,6 +1082,31 @@ Idiomatic -
 
 https://github.com/rwaldron/idiomatic.js/
 
+### data type
+
+```
+"Hello" - string
+123 - number
+true / false - boolean
+null - null
+undefined - undefined
+typeof(345) -> number
+typeof("hello") -> string
+typeof(true) -> boolean
+```
+variable
+
+```
+let name = "John";
+let age = 30;
+let isMarried = true;
+
+prompt("What is your name?");
+let name = prompt("What is your name?");
+alert(name)
+```
+
+
 
 
 
