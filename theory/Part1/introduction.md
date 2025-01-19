@@ -1071,7 +1071,13 @@ Java, C/C+, Swift are compiled
 - compiled language is more efficient
 
 
+-console
+- sources -> snippet -> can write many different lines -> bottom play button
 
+
+```
+alert("Hello");
+```
 
 
 
