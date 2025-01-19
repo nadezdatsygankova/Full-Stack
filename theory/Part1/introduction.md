@@ -1059,6 +1059,17 @@ subtitle - glacial indifference
 
 website - https://nadiatsy.my.canva.site/
 
+## JS
+
+JavaScript, Ruby, Python are interpreted
+Java, C/C+, Swift are compiled
+
+- compiled language is faster
+- interpreted language is easier to learn
+- compiled language is more secure
+- interpreted language is more flexible
+- compiled language is more efficient
+
 
 
 
