@@ -1082,6 +1082,72 @@ Idiomatic -
 
 https://github.com/rwaldron/idiomatic.js/
 
+### data type
+
+```
+"Hello" - string
+123 - number
+true / false - boolean
+null - null
+undefined - undefined
+typeof(345) -> number
+typeof("hello") -> string
+typeof(true) -> boolean
+```
+variable
+
+```
+let name = "John";
+let age = 30;
+let isMarried = true;
+
+prompt("What is your name?");
+let name = prompt("What is your name?");
+alert(name)
+```
+### javascript variable exercise
+
+```
+function test() {
+    var a = "3";
+    var b = "8";
+
+var c = a;
+a=b;
+b=c;
+
+    console.log("a is " + a);
+    console.log("b is " + b);
+}
+
+```
+### naming and naming convention for javascript variables
+
+cleaning - command + K
+
+snippet - long click to reload button- empty cache and hard reload
+```
+let name = "John";
+let age = 30;
+let isMarried = true;
+```
+name can contains
+- number + letters + $ + _
+- cannot start with number
+- cannot contain space
+- cannot contain special character except $ and _
+camel casing
+- first letter is lowercase
+- first letter of each word is uppercase
+- example: `let firstName = "John";`
+- example: `let isMarried = true;`
+- example: `let ageClient = 30;`
+
+
+
+
+
+
 
 
 
