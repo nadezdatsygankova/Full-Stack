@@ -1226,6 +1226,46 @@ let humanAge = (dogAge-2)*4 + 21;
 alert("Your dog age is "+ humanAge+ " in human Ages")
 
 ```
+### increment and decrement expressions
+- increment operator ++
+- decrement operator --
+
+```
+let a = 5;
+console.log(a++); //5
+console.log(a); //6
+console.log(++a); //7
+console.log(a); //7
+console.log(a--); //7
+console.log(a); //6
+console.log(--a); //5
+console.log(a); //5
+a += 5;
+console.log(a); //10
+```
+### function
+- function declaration
+- function expression
+- function call
+- function return
+- function arguments
+- function parameters
+
+```
+function greet(name) {
+  console.log("Hello, " + name);
+  }
+  greet("John");
+  function add(a, b) {
+    return a + b;
+  }
+    console.log(add(5, 7));
+
+```
+https://stanford.edu/~cpiech/karel/ide.html
+
+
+
 
 
 
