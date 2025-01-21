@@ -1281,6 +1281,25 @@ console.log(b); //1
 The Math.floor() method rounds a number DOWN to the nearest integer.
 
 ```
+```
+function lifeInWeeks(age) {
+
+    let ageBeetwen = 90-age;
+    let days= ageBeetwen*365;
+    let week=ageBeetwen*52;
+    let month=ageBeetwen*12;
+    console.log("You have "+ days+" days, "+week+" weeks, and "+month+" months left.")
+
+}
+```
+```
+function getMilk (money) {
+return money % 1.5;
+}
+
+let change = getMilk(5);
+console.log(change);
+```
 
 
 
