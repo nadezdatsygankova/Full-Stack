@@ -1264,8 +1264,23 @@ function greet(name) {
 ```
 https://stanford.edu/~cpiech/karel/ide.html
 
+```
+function costOfMilk(bottles) {
+  return bottles * 0.25;
+  }
 
+costOfMilk(5);
 
+```
+if we need round
+
+```
+let a = 1.44556
+let b = Math.floor(a);
+console.log(b); //1
+The Math.floor() method rounds a number DOWN to the nearest integer.
+
+```
 
 
 
