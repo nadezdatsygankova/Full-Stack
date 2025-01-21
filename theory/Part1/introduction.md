@@ -1300,7 +1300,30 @@ return money % 1.5;
 let change = getMilk(5);
 console.log(change);
 ```
+```
+function calculateBottles(startingMoney, costPerBottle){
+  let bottles = Math.floor(startingMoney / costPerBottle);
+  return bottles;
+}
 
+console.log(calculateBottles(100, 5));
+
+function CalcChange(startingMoney, bottles){
+  let change = startingMoney % bottles;
+  return change;
+}
+
+```
+```
+function bmiCalculator(weight, height)
+{
+   let BMI = weight/Math.pow(height,2);
+   return Math.round(BMI);
+}
+
+let BMI = Math.round(bmiCalculator(65,1.69));
+console.log(BMI);
+```
 
 
 
