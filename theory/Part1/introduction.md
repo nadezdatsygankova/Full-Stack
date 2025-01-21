@@ -1264,9 +1264,66 @@ function greet(name) {
 ```
 https://stanford.edu/~cpiech/karel/ide.html
 
+```
+function costOfMilk(bottles) {
+  return bottles * 0.25;
+  }
 
+costOfMilk(5);
 
+```
+if we need round
 
+```
+let a = 1.44556
+let b = Math.floor(a);
+console.log(b); //1
+The Math.floor() method rounds a number DOWN to the nearest integer.
+
+```
+```
+function lifeInWeeks(age) {
+
+    let ageBeetwen = 90-age;
+    let days= ageBeetwen*365;
+    let week=ageBeetwen*52;
+    let month=ageBeetwen*12;
+    console.log("You have "+ days+" days, "+week+" weeks, and "+month+" months left.")
+
+}
+```
+```
+function getMilk (money) {
+return money % 1.5;
+}
+
+let change = getMilk(5);
+console.log(change);
+```
+```
+function calculateBottles(startingMoney, costPerBottle){
+  let bottles = Math.floor(startingMoney / costPerBottle);
+  return bottles;
+}
+
+console.log(calculateBottles(100, 5));
+
+function CalcChange(startingMoney, bottles){
+  let change = startingMoney % bottles;
+  return change;
+}
+
+```
+```
+function bmiCalculator(weight, height)
+{
+   let BMI = weight/Math.pow(height,2);
+   return Math.round(BMI);
+}
+
+let BMI = Math.round(bmiCalculator(65,1.69));
+console.log(BMI);
+```
 
 
 
