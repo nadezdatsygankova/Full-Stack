@@ -1197,6 +1197,76 @@ alert("Hello, " + text.slice(0,1).toUpperCase() + secondPartOfText.toLowerCase()
 87
 ### basic arithmetics and the modulo operator
 
+numbers
+- addition
+- subtraction
+- multiplication
+- division
+- modulo
+- exponentiation
+
+```
+let a = 5;
+let b = 3;
+console.log(a + b); //8
+console.log(a - b); //2
+console.log(a * b); //15
+console.log(a / b); //1.6666666666666667
+console.log(a % b); //2
+console.log(a ** b); //25
+if % is 0 => even number
+if % is 1 => odd number
+
+```
+multiplication - first
+
+```
+let dogAge = prompt("What is your dog age?");
+let humanAge = (dogAge-2)*4 + 21;
+alert("Your dog age is "+ humanAge+ " in human Ages")
+
+```
+### increment and decrement expressions
+- increment operator ++
+- decrement operator --
+
+```
+let a = 5;
+console.log(a++); //5
+console.log(a); //6
+console.log(++a); //7
+console.log(a); //7
+console.log(a--); //7
+console.log(a); //6
+console.log(--a); //5
+console.log(a); //5
+a += 5;
+console.log(a); //10
+```
+### function
+- function declaration
+- function expression
+- function call
+- function return
+- function arguments
+- function parameters
+
+```
+function greet(name) {
+  console.log("Hello, " + name);
+  }
+  greet("John");
+  function add(a, b) {
+    return a + b;
+  }
+    console.log(add(5, 7));
+
+```
+https://stanford.edu/~cpiech/karel/ide.html
+
+
+
+
 
 
 
