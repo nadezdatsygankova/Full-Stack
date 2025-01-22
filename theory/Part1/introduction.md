@@ -1343,9 +1343,102 @@ random= random * 100;
 random = Math.floor(random)+1;
 console.log("You have "+ random +" % of love");
 ```
+### use if else
+
+comparatives
+
+```
+let nameFirst = prompt("What is your name?");
+let nameSecond = prompt("What is your lover name?");
+let love = prompt("How much do you love your lover?");
+let random = Math.random();
+random= random * 100;
+random = Math.floor(random)+1;
+if (random > 50){
+  console.log(nameFirst + " loves " + nameSecond + " very much");
+  } else {
+    console.log(nameFirst + " loves " + nameSecond + " a little");
+    }
+
+```
+```
+=== is equal - the data type is matching
+!== is not equal
+> is greater than
+< is less than
+>= is greater than or equal to
+<= is less than or equal to
+
+```
+```
+let nameFirst = prompt("What is your name?");
+let nameSecond = prompt("What is your lover name?");
+let love = prompt("How much do you love your lover?");
+let random = Math.random();
+random= random * 100;
+random = Math.floor(random)+1;
+if (random > 50 && love > 50){
+  console.log(nameFirst + " loves " + nameSecond + " very much");
+  } else {
+    console.log(nameFirst + " loves " + nameSecond + " a little");
+    }
+ and - &&
+ or - ||
+ not - !
+```
+```
+BMI calculator
+
+function bmiCalculator (weight, height) {
+     let BMI = weight/(height*height);
+     let interpretation;
+     if (BMI <18.5)
+     {
+         interpretation = "Your BMI is " +BMI+", so you are underweight.";
+     }
+     if (BMI >18.5 && BMI <=24.9)
+     {
+          interpretation = "Your BMI is " +BMI+", so you have a normal weight.";
+     }
+     if (BMI >24.9)
+     {
+          interpretation = "Your BMI is " +BMI+", so you are overweight.";
+     }
+
+    return interpretation;
+}
+```
+Leap Year Challenge Exercise
+```
+function isLeap(year) {
+
+if (year%4 == 0)
+{
+   if (year%100 ==0)
+   {
+       if(year%400 ==0)
+       {
+           console.log("Leap year.")
+       }
+       else
+       {
+           console.log("Not leap year.")
+       }
+   }
+   else
+   {
+       console.log("Leap year.")
+   }
+}
+else
+{
+    console.log("Not leap year.")
+}
 
 
 
+}
+```
 
 
 
