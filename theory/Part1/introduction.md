@@ -1324,6 +1324,15 @@ function bmiCalculator(weight, height)
 let BMI = Math.round(bmiCalculator(65,1.69));
 console.log(BMI);
 ```
+## Intermediate JS
+```
+let n = Math.random();
+//between 0 - 0.99
+n = n * 6;
+n = Math.floor(n);
+//between 0 - 5
+
+
 
 
 
