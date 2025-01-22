@@ -1329,8 +1329,20 @@ console.log(BMI);
 let n = Math.random();
 //between 0 - 0.99
 n = n * 6;
-n = Math.floor(n);
-//between 0 - 5
+//if need to range 1-12 we can multiply by 12
+n = Math.floor(n) + 1;
+//between 1 - 6
+```
+task
+```
+let nameFirst = prompt("What is your name?");
+let nameSecond = prompt("What is your lover name?");
+
+let random = Math.random();
+random= random * 100;
+random = Math.floor(random)+1;
+console.log("You have "+ random +" % of love");
+```
 
 
 
