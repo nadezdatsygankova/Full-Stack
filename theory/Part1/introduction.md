@@ -1490,6 +1490,24 @@ else {
 }
 
 ```
+### FizzBuzz
+
+push - in the end of the array
+pop - take out last item
+
+```
+let output =[];
+
+function fizzBuzz (i){
+    output.push(i)
+    console.log(output);
+}
+
+for(i=0; i< 10; i++){
+    fizzBuzz (i)
+}
+```
+
 
 
 
