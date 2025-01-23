@@ -1439,6 +1439,58 @@ else
 
 }
 ```
+### working with javascript arrays
+
+```
+// Creating an array
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+// Accessing an element in the array
+console.log(numbers[0]);
+// Modifying an element in the array
+numbers[0] = 10;
+console.log(numbers);
+// Adding an element to the array
+numbers.push(6);
+console.log(numbers);
+// Removing an element from the array
+numbers.pop();
+console.log(numbers);
+// Checking if an element exists in the array
+console.log(numbers.includes(2));
+// Getting the length of the array
+console.log(numbers.length);
+// Sorting the array
+numbers.sort((a, b) => a - b);
+console.log(numbers);
+// Reversing the array
+numbers.reverse();
+console.log(numbers);
+// Filtering the array
+let evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);
+// Mapping the array
+let squaredNumbers = numbers.map(num => num ** 2);
+console.log(squaredNumbers);
+// Reducing the array
+let sum = numbers.reduce((acc, current) => acc + current, 0);
+console.log(sum);
+
+```
+
+```
+let gestsList = ["Anna", "Jena", "Nadia"];
+let guess = prompt("What is you name?")
+
+if (gestsList.includes(guess)){
+    console.log("Welcome");
+}
+else {
+    console.log("Sorry, you are not in the list");
+}
+
+```
+
 
 
 
