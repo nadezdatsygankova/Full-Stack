@@ -1534,6 +1534,29 @@ do {
 
 when the computer will cary on until eternity, and instead crashed your code.
 
+### for loop
+
+```
+for (let i = 0; i < 10; i++){
+  console.log(i);
+  }
+```
+- let i = 0 - initialize
+- i < 10 - condition
+- i++ - increment
+- console.log(i) - code to be executed
+
+### Fibonacci Challenge
+- Create a function that takes a number as an argument and returns the nth number in the Fibonacci sequence
+- The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers
+- 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+- The first two numbers in the sequence are 0 and 1
+- The next number in the sequence is the sum of the previous two numbers
+- The sequence continues indefinitely
+
+
+
+
 
 
 
