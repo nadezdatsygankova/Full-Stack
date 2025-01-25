@@ -1554,6 +1554,12 @@ for (let i = 0; i < 10; i++){
 - The next number in the sequence is the sum of the previous two numbers
 - The sequence continues indefinitely
 
+### The DOM- 114
+
+- The Document Object Model (DOM) is a programming interface for HTML and XML documents
+- It represents the structure of a document as a tree-like data structure
+- The DOM is a W3C standard
+
 
 
 
