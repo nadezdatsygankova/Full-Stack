@@ -1605,6 +1605,65 @@ Objects has properties and methods
 Method is something that an object can do
 Property is something that an object has
 
+### Manipulating and Changing Styles
+- The DOM allows you to manipulate and change the styles of elements
+
+```
+document.querySelector("h1").style.color = "red";
+document.querySelector("h1").style.fontSize = "30px";
+document.querySelector("h1").style.fontFamily = "Arial";
+document.querySelector("h1").style.visibility =" hidden";
+document.querySelector("button").style.backgroundColor =" yellow";
+document.querySelector(".PBBEhf").style.backgroundColor = "red";
+
+```
+### The separation of concerns
+- The separation of concerns is a principle of software design
+- The separation of concerns is a way of organizing code
+
+```
+document.querySelector("button").classList.add("invisible"); //add a class invisible to the object
+document.querySelector("button").classList.remove("invisible"); //remove a class invisible to the object
+document.querySelector("button").classList.toggle("invisible"); //toggle a class invisible to the object
+document.querySelector("button").classList.contains("invisible"); //check if a class invisible is in the object
+document.querySelector("button").classList.replace("invisible", "visible"); //replace a class invisible with a
+```
+we can save all our styles in style.css and turn on/ off using JS
+
+
+### Text Manipulation
+- The DOM allows you to manipulate the text of elements
+- The DOM allows you to get the text of an element
+
+```
+document.querySelector("h1").textContent = "Hello World!";// add just text content //Hello World
+document.querySelector("h1").innerHTML="Hello"; // all HTML between <h1></h1>
+// for example it can be <strong>Hello </strong>
+document.querySelector("h1").innerText = "<em>Hello World!</em>";
+
+document.querySelector("h1").outerHTML = "<h1>Hello</h1>"; // all HTML
+document.querySelector("h1").innerText = "Hello World!"; // all text
+```
+
+### Adding and Removing Elements
+
+```
+document.querySelector("h1").attributes;
+document.querySelector("h1").getAttribute("class");// check what we have
+document.querySelector("h1").setAttribute("class", "new-class"); // add attribute
+document.querySelector("h1").removeAttribute("class");
+
+
+- The DOM allows you to add and remove elements from a document
+- The DOM allows you to add and remove elements from a document using the `createElement` method
+- The DOM allows you to add and remove elements from a document using the `appendChild` method
+- The DOM allows you to add and remove elements from a document using the `removeChild` method
+- The DOM allows you to add and remove elements from a document using the `replaceChild` method
+- The DOM allows you to add and remove elements from a document using the `insertBefore` method
+- The DOM allows you to add and remove elements from a document using the `insertAfter` method
+- The DOM allows you to add and remove elements from a document using the `appendChild` method
+
+
 
 
 
