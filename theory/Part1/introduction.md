@@ -1605,6 +1605,30 @@ Objects has properties and methods
 Method is something that an object can do
 Property is something that an object has
 
+### Manipulating and Changing Styles
+- The DOM allows you to manipulate and change the styles of elements
+
+```
+document.querySelector("h1").style.color = "red";
+document.querySelector("h1").style.fontSize = "30px";
+document.querySelector("h1").style.fontFamily = "Arial";
+document.querySelector("h1").style.visibility =" hidden";
+document.querySelector("button").style.backgroundColor =" yellow";
+document.querySelector(".PBBEhf").style.backgroundColor = "red";
+
+
+```
+### Adding and Removing Elements
+- The DOM allows you to add and remove elements from a document
+- The DOM allows you to add and remove elements from a document using the `createElement` method
+- The DOM allows you to add and remove elements from a document using the `appendChild` method
+- The DOM allows you to add and remove elements from a document using the `removeChild` method
+- The DOM allows you to add and remove elements from a document using the `replaceChild` method
+- The DOM allows you to add and remove elements from a document using the `insertBefore` method
+- The DOM allows you to add and remove elements from a document using the `insertAfter` method
+- The DOM allows you to add and remove elements from a document using the `appendChild` method
+
+
 
 
 
