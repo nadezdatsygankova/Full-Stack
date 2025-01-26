@@ -1616,8 +1616,23 @@ document.querySelector("h1").style.visibility =" hidden";
 document.querySelector("button").style.backgroundColor =" yellow";
 document.querySelector(".PBBEhf").style.backgroundColor = "red";
 
+```
+### The separation of concerns
+- The separation of concerns is a principle of software design
+- The separation of concerns is a way of organizing code
 
 ```
+document.querySelector("button").classList.add("invisible"); //add a class invisible to the object
+document.querySelector("button").classList.remove("invisible"); //remove a class invisible to the object
+document.querySelector("button").classList.toggle("invisible"); //toggle a class invisible to the object
+document.querySelector("button").classList.contains("invisible"); //check if a class invisible is in the object
+document.querySelector("button").classList.replace("invisible", "visible"); //replace a class invisible with a
+```
+we can save all our styles in style.css and turn on/ off using JS
+
+
+
+
 ### Adding and Removing Elements
 - The DOM allows you to add and remove elements from a document
 - The DOM allows you to add and remove elements from a document using the `createElement` method
