@@ -1572,6 +1572,16 @@ alert(Hello");
 
 </script>
 </body>
+```
+or
+external file
+at the end of </body>
+```
+<script src="index.js" charset="utf-8"></script>
+//at the end of </body>
+
+```
+
 
 
 
