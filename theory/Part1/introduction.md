@@ -1581,6 +1581,31 @@ at the end of </body>
 //at the end of </body>
 
 ```
+### introduction to the DOM
+- The DOM is a tree-like data structure
+- The DOM is a W3C standard
+- The DOM is a programming interface for HTML and XML documents
+- The DOM represents the structure of a document as a tree-like data structure
+- The DOM is used to access and manipulate the elements of a document
+- The DOM is used to add, remove, and modify elements of a document
+
+Extension - HTML Tree Generator
+
+https://chromewebstore.google.com/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg
+
+document is the entire html file
+```
+document.firstElementChild
+// everything from <html></html>
+document.firstElementChild.innerHTML = "Good bye!";
+document.querySelector("input").click();
+```
+Objects has properties and methods
+
+Method is something that an object can do
+Property is something that an object has
+
+
 
 
 
