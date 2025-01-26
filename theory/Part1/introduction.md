@@ -1560,7 +1560,18 @@ for (let i = 0; i < 10; i++){
 - It represents the structure of a document as a tree-like data structure
 - The DOM is a W3C standard
 
+```
+// insert Js
+//when body onload
+<body onload = "alert('Hello');" >
+```
+```
+<body>
+<script type = "text/javascript">
+alert(Hello");
 
+</script>
+</body>
 
 
 
