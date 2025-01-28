@@ -1662,8 +1662,12 @@ document.querySelector("h1").removeAttribute("class");
 - The DOM allows you to add and remove elements from a document using the `insertBefore` method
 - The DOM allows you to add and remove elements from a document using the `insertAfter` method
 - The DOM allows you to add and remove elements from a document using the `appendChild` method
-
+```
 ## Boss level challenge 1
+project under dice
+
+## Advanced JS
+
 
 
 
