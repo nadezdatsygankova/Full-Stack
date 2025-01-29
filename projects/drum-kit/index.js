@@ -1,12 +1,13 @@
-let AudioList = ["crash", "kick-bass", "snare", "tom-1", "tom-2", "tom-3", "tom-4"];
-console.log(AudioList);
+// Button Event Listener
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   document.querySelectorAll("button")[i].addEventListener("click", function () {
    let buttonInner = this.innerHTML;
     playSound(buttonInner);
+    buttonAnimation(buttonInner);
 })
 
 };
+
 
 function playSound(key) {
   switch (key) {
@@ -42,7 +43,19 @@ function playSound(key) {
         console.log("Error");
         }
 }
+// Keyboard Event Listener
 
 document.addEventListener("keydown", function (event) {
-          playSound(event.key);});
+  playSound(event.key);
+  buttonAnimation(event.key);
 
+});
+
+// Button Animation
+function buttonAnimation(currentKey) {
+  let activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
+}
