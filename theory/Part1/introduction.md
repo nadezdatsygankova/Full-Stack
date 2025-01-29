@@ -1684,7 +1684,16 @@ function respondToClick (){
 }
 ```
 
+```
+// in inspect
 
+debugger;
+calculator(5,4,add);
+
+```
+#### Hight order functions are functions that take other functions as arguments or return functions as output
+
+### 139 How to play sounds on a Website
 
 
 
