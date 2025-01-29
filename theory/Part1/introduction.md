@@ -1695,6 +1695,85 @@ calculator(5,4,add);
 
 ### 139 How to play sounds on a Website
 
+### JS object
+```
+let person = {
+  name: "Nadia",
+  age: 30,
+  address: {
+    street: "123 main st",
+    city: "NYC",
+    state: "NY"
+    },
+    hobbies: ["reading", "hiking", "coding"]
+}
+
+```
+accessing
+
+```
+console.log(person.name);
+console.log(person.address.street);
+
+```
+construction function
+
+```
+function createPerson(name, age, address, hobbies){
+  return {
+    name: name,
+    age: age,
+    address: address,
+    hobbies: hobbies
+    }
+}
+or
+function createPerson(name, age, address, hobbies){
+  this.name = name;
+  this.age = age;
+  this.address = address;
+  this.hobbies = hobbies;
+  }
+
+  // create
+  let person1 = new createPerson("Nadia", "78", "main", ["bike","run"]);
+  console.log(person1.name);
+  ```
+  ### methods
+
+  ```
+  function createPerson(name, age, address, hobbies){
+    this.name = name;
+    this.age = age;
+    this.address = address;
+    this.hobbies = hobbies;
+    this.sayHello = function(){
+      console.log("Hello, my name is " + this.name);
+      }
+}
+// create
+let person1 = new createPerson("Nadia", "78", "main", ["bike","run"]);
+person1.sayHello();
+
+```
+keydown
+
+```
+document.addEventListener("keydown", function(event){
+  console.log(event.key);
+  console.log(event.code);
+  console.log(event.charCode);
+  console.log(event.keyCode);
+  console.log(event.altKey);
+  console.log(event.ctrlKey);
+}
+)
+```
+
+
+
+
+
 
 
 
