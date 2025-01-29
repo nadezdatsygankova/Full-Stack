@@ -1716,7 +1716,8 @@ console.log(person.name);
 console.log(person.address.street);
 
 ```
-factory
+construction function
+
 ```
 function createPerson(name, age, address, hobbies){
   return {
@@ -1726,6 +1727,38 @@ function createPerson(name, age, address, hobbies){
     hobbies: hobbies
     }
 }
+or
+function createPerson(name, age, address, hobbies){
+  this.name = name;
+  this.age = age;
+  this.address = address;
+  this.hobbies = hobbies;
+  }
+
+  // create
+  let person1 = new createPerson("Nadia", "78", "main", ["bike","run"]);
+  console.log(person1.name);
+  ```
+  ### methods
+
+  ```
+  function createPerson(name, age, address, hobbies){
+    this.name = name;
+    this.age = age;
+    this.address = address;
+    this.hobbies = hobbies;
+    this.sayHello = function(){
+      console.log("Hello, my name is " + this.name);
+      }
+}
+// create
+let person1 = new createPerson("Nadia", "78", "main", ["bike","run"]);
+person1.sayHello();
+
+```
+keydown
+
+
 
 
 
