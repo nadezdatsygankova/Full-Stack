@@ -1758,6 +1758,18 @@ person1.sayHello();
 ```
 keydown
 
+```
+document.addEventListener("keydown", function(event){
+  console.log(event.key);
+  console.log(event.code);
+  console.log(event.charCode);
+  console.log(event.keyCode);
+  console.log(event.altKey);
+  console.log(event.ctrlKey);
+}
+)
+```
+
 
 
 
