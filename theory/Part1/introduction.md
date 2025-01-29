@@ -1668,7 +1668,17 @@ project under dice
 
 ## Advanced JS
 
+in inspect you can go to the console
 
+```
+//show h1 element
+$0
+
+
+//change text of h1 element
+$0.innerHTML = "Nadia";
+
+```
 
 
 
