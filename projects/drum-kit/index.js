@@ -46,8 +46,10 @@ function playSound(key) {
 // Keyboard Event Listener
 
 document.addEventListener("keydown", function (event) {
-          playSound(event.key);
-          buttonAnimation(event.key);});
+  playSound(event.key);
+  buttonAnimation(event.key);
+
+});
 
 // Button Animation
 function buttonAnimation(currentKey) {
@@ -55,5 +57,5 @@ function buttonAnimation(currentKey) {
   activeButton.classList.add("pressed");
   setTimeout(function () {
     activeButton.classList.remove("pressed");
-  }, 100);
+  }, 1000);
 }
