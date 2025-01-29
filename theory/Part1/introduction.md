@@ -1668,7 +1668,21 @@ project under dice
 
 ## Advanced JS
 
+in inspect you can go to the console
 
+```
+//show h1 element
+$0
+
+
+//change text of h1 element
+$0.innerHTML = "Nadia";
+
+$0.addEventListener("click", respondToClick);
+function respondToClick (){
+  console.log("You clicked me!");
+}
+```
 
 
 
