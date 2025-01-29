@@ -1684,8 +1684,13 @@ function respondToClick (){
 }
 ```
 
+```
+// in inspect
 
+debugger;
+calculator(5,4,add);
 
+```
 
 
 
