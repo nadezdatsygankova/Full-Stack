@@ -1678,6 +1678,10 @@ $0
 //change text of h1 element
 $0.innerHTML = "Nadia";
 
+$0.addEventListener("click", respondToClick);
+function respondToClick (){
+  console.log("You clicked me!");
+}
 ```
 
 
