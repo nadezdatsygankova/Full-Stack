@@ -1776,7 +1776,27 @@ document.addEventListener("keydown", function(event){
     }
     }
     )
-    
+
+```
+## section 19 - jQuery
+### what is jQuery
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things simpler for HTML document
+traversing, event handling, animating, and Ajax interactions for quicker development and easier maintenance of
+web applications.
+```
+// jQuery
+document.querySelector("h1") = jQuery("h1")=$("h1")
+
+```
+### how to incorporate jQuery into Website
+1. download jQuery from jQuery website
+Google CDN
+https://developers.google.com/speed/libraries#jquery
+
+2. include jQuery in your HTML file
+
+
+
 
 
 
