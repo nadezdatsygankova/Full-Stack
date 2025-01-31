@@ -1776,7 +1776,72 @@ document.addEventListener("keydown", function(event){
     }
     }
     )
-    
+
+```
+## section 19 - jQuery
+### what is jQuery
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things simpler for HTML document
+traversing, event handling, animating, and Ajax interactions for quicker development and easier maintenance of
+web applications.
+```
+// jQuery
+document.querySelector("h1") = jQuery("h1")=$("h1")
+
+```
+### how to incorporate jQuery into Website
+1. download jQuery from jQuery website
+Google CDN
+https://developers.google.com/speed/libraries#jquery
+
+2. include jQuery in your HTML file
+
+```
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./index.js"></script>
+
+```
+or
+```
+$(document).ready(function() {
+  $("h1").css("color", "red");
+});
+
+```
+
+we can use minify- to min size
+
+### selected elements
+
+```
+// get all elements with class name
+$(".class-name")
+// get all elements with id
+$("#id")
+// get all elements with tag name
+$("tag-name")
+
+// get all elements with attribute
+$("[attribute='value']")
+// get all elements with attribute that contains value
+$("[attribute*='value']")
+// get all elements with attribute that starts with value
+$("[attribute^='value']")
+// get all elements with attribute that ends with value
+$("[attribute$='value']")
+
+examples:
+$("buttons");
+$("#myButton");
+$(".myClass");
+$("[href='#']");
+$("[href*='http']");
+$("[href^='http']");
+$("[href$='com']");
+
+$("h1").css("color") - we get property
+$("h1").css("color", "red") - we set property
+
+
 
 
 
