@@ -1899,6 +1899,20 @@ $("h1").toggle("slow");
 $("h1").toggle("slow", "swing");
 ```
 ### animation
+```
+$("h1").animate({left: "100px"}, "slow");
+$("h1").animate({left: "100px"}, "slow", "swing");
+$("h1").show();
+$("h1").hide();
+
+$("h1").fadeout();
+$("h1").fadeIn();
+$("h1").fadeToggle();
+
+$("h1").slideDown();
+$("h1").slideUp();
+$("h1").slideToggle();
+
 
 
 
