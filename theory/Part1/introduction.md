@@ -1841,6 +1841,20 @@ $("[href$='com']");
 $("h1").css("color") - we get property
 $("h1").css("color", "red") - we set property
 
+```
+### DOM manipulation
+
+```
+$("h1").text("Bye");
+$("h1").html("<b>Bye</b>");
+$("h1").val("Bye"); // for input fields
+$("h1").attr("class", "myClass");
+$("h1").attr("class", "myClass myClass2");
+$("h1").removeAttr("class");
+$("h1").removeAttr("class", "myClass");
+$("h1").remove();
+```
+
 
 
 
