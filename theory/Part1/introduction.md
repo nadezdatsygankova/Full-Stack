@@ -1849,15 +1849,69 @@ $("h1").text("Bye");
 $("h1").html("<b>Bye</b>");
 $("h1").val("Bye"); // for input fields
 $("h1").attr("class", "myClass");
+$("img").attr("src");
 $("h1").attr("class", "myClass myClass2");
 $("h1").removeAttr("class");
 $("h1").removeAttr("class", "myClass");
 $("h1").remove();
 ```
+### Event jQuery
 
+```
+$("h1").click(function(){
+  $("h1").css("color", "purple")
+});
+$("h1").hover(function(){
+  $("h1").css("color", "blue")
+  },
+  function(){
+    $("h1").css("color", "red")
+    });
 
+$("input").keypress(function(event){
+  console.log(event.key)
+  $("h1").text(event.key);
+})
 
+$("h1").on("mouseover", function(){
+  $("h1").css("color", "red")
+})
 
+```
+### adding element
+
+```
+$("body").append("<p>Bye</p>");
+$("body").prepend("<p>Bye</p>");
+$("body").after("<p>Bye</p>");
+$("body").before("<p>Bye</p>");
+
+```
+### removing element
+```
+$("p").remove();
+$("p").empty();
+```
+### toggle
+```
+$("h1").toggle();
+$("h1").toggle("slow");
+$("h1").toggle("slow", "swing");
+```
+### animation
+```
+$("h1").animate({left: "100px"}, "slow");
+$("h1").animate({left: "100px"}, "slow", "swing");
+$("h1").show();
+$("h1").hide();
+
+$("h1").fadeout();
+$("h1").fadeIn();
+$("h1").fadeToggle();
+
+$("h1").slideDown();
+$("h1").slideUp();
+$("h1").slideToggle();
 
 
 
