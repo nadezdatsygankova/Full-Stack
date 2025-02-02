@@ -1958,6 +1958,45 @@ control + e - at the end
 - `rm -rf /Angela` - removed directory and all files in it
 https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384438#overview
 
+## Backend tools
+
+1. server = computer connected with network 24/7 on
+2. application = logical run to the server, response request
+3. database = store user date
+
+
+Server -> Application -> Database
+- server = Apache, Nginx, IIS
+- application = PHP, Python, Ruby
+- database = MySQL, MongoDB, PostgreSQL
+
+Restaurant
+- restaurant - front-end
+- server = kitchen
+- applications - Chefs
+- database = pantry
+
+request- respond = circle of all application
+
+### back-end technologies
+front-end
+- HTML
+- CSS
+- JavaScript
+back-end
+- PHP
+- Python
+- Ruby
+- Java
+- C++
+- C#
+- JavaScript
+- SQL
+- NoSQL
+- MongoDB
+- MySQL
+- PostgreSQL
+- Oracle
 
 
 
