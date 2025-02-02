@@ -1915,6 +1915,54 @@ $("h1").slideToggle();
 
 ```
 ## The Simon Game
+folder Simon Game
+
+### Command line
+- GUI - Graphical User Interface
+- CLI - Command Line Interface
+- API - Application Programming Interface
+
+BASH shell - Bourne Again Shell
+- `cd` - change directory
+- `ls` - list
+- `mkdir` - make directory
+- `rm` - remove
+- `cp` - copy
+- `mv` - move
+- `touch` - create file
+- `echo` - print
+- `cat` - print file
+
+- `echo "hello"`
+- `echo "hello" > file.txt`
+- `~` - root directory
+- `.` - current directory
+add optional and go through the line
+control + a - at the start
+control + e - at the end
+
+- `touch Text.txt`
+- `open Text.txt`
+- `open -a /Applications/PDF\ Reader\ Pro.app Text.txt`
+- ` rm text.txt` - remove text
+- `rm -r text.txt` - remove text and all files in it
+- `rm -rf text.txt` - remove text and all files in it and all subdirectories
+- `cp text.txt text2.txt` - copy text to text2
+- `cp -r text text2` - copy text and all files in it to text2
+- `mv text.txt text2.txt` - move text to text2
+-`pwd` - print work directory
+- `cd ~` - change to root directory
+- `rm * ` - remove all texts inside directory
+- `rm -r *` - remove all texts and all files in it inside directory
+- `rm -r /Angela` - removed directory
+- `rm -rf /Angela` - removed directory and all files in it
+https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384438#overview
+
+
+
+
+
+
 
 
 
