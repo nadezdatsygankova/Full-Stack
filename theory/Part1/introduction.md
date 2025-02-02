@@ -1913,6 +1913,8 @@ $("h1").slideDown();
 $("h1").slideUp();
 $("h1").slideToggle();
 
+```
+## The Simon Game
 
 
 
