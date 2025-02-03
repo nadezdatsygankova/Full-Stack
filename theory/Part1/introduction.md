@@ -1998,9 +1998,82 @@ back-end
 - PostgreSQL
 - Oracle
 
+## Node.js
 
+Node js - an asynchronus event-driven JavaScript runtime, Node.js is designed to build scalable network application.
 
+use V8 engine
 
+- Node.js = JavaScript run on server
+JS Fullstack
+Scales
+Non-blocking
+Event-driven
+ecosystem
+```
+terminal
+node -v
+```
+
+NOde Read Eval Print Loop
+- REPL
+- console.log
+
+node
+- .exit
+- .help
+Ctrl +C
+
+file under backend
+index.js
+
+terminal
+-> node index.js
+
+### native node module
+prebuilt courses
+- express
+- http
+- fs
+
+file system
+- fs
+we can use in our local storage
+- readFileSync
+- writeFileSync
+
+folder - Native Modules
+```
+const fs = require("fs");
+
+fs.writeFile("message.txt", "Hello from Nadia", (err) => {
+  if (err) throw err;
+  console.log("The file has been saved!");
+});
+
+fs.readFile("message.txt", "utf8", (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+```
+
+### Node Package Manager - mpn
+- npm init
+- npm install
+- npm install express
+- npm install express@4.17.1
+- npm install express@latest
+
+ECMAScript module
+
+```
+we can add in package.json
+"type":"module",
+
+and in index.js
+import express from "express";
+
+```
 
 
 
