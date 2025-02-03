@@ -2074,6 +2074,15 @@ and in index.js
 import express from "express";
 
 ```
+### QR Code Generator
+
+npm install inquirer.js
+npm install qr-image
+"type": "module",
+
+npm init -y
+
+
 
 
 
