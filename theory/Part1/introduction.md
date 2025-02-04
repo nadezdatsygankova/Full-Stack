@@ -2082,6 +2082,66 @@ npm install qr-image
 
 npm init -y
 
+## Express framework
+js framework
+- express
+Node allows to run JS in any computer
+- express is a framework that allows to run JS on the server
+- express is a web framework
+- express is a router
+- express is a middleware
+- express is a server
+
+1. readability
+2. less code
+3. middleware
+
+Client-Side
+- client is the user
+- client is the browser
+- client is the application
+- client is the device
+
+Server-Side
+- server is the computer
+- server is the application
+- server is the device
+- server is the machine
+
+1. Create directory
+2. Create index.js file
+3. Initialise NPM pm init -y
+4. Install express npm install express@latest
+5. Write Server application in index.js
+6. Start server
+
+```
+import express from 'express';
+const app = express();
+const port = 3000;
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+```
+7. Run server
+```
+node index.js
+
+```
+http://localhost:3000
+
+
+To find what ports are listening
+
+```
+sudo lsof -i -P -n | grep LISTEN
+```
+
+
+
+
 
 
 
