@@ -2139,6 +2139,50 @@ To find what ports are listening
 sudo lsof -i -P -n | grep LISTEN
 ```
 
+### HTTP
+- HTTP is a request-response protocol
+Hypertext transfer protocol
+
+-GET -> request resource from the server
+-POST -> sending resource to the server
+-PUT ->UPDATE- replace the resource - new -PATCH - bicycle
+-PATCH ->UPDATE patch up a resource - only wheels
+-DELETE -> delete resource
+
+```
+1.Create directory
+2.Create index.js file
+3.Initialise NPM pm init -y
+4.Install express npm install express@latest
+5.add "type": "module",
+6.Write Server application in index.js
+7.Start server
+
+Request goes from browser from particular path
+console.log(req.rawHeaders);
+
+```
+```
+import express from 'express';
+const app = express();
+const port = 3000;
+
+// we receive a GET request to the root URL
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+```
+nodemon
+
+npm i -g nodemon
+
+nodemon index.js
+
+
 
 
 
