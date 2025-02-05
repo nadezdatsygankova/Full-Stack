@@ -2182,7 +2182,20 @@ npm i -g nodemon
 
 nodemon index.js
 
+endpoints
+- root endpoint
+- /users
+- /users/:id
+- /users/:id/orders
+- /users/:id/orders/:id
 
+http://localhost:3000/about
+
+```
+app.get('/about', (req, res) => {
+  res.send('<h1>About</h1>');
+});
+```
 
 
 
