@@ -16,6 +16,25 @@ app.get('/contact', (req, res) => {
   res.send('<h1>Contact</h1>');
   });
 
+app.post('/register', (req, res) => {
+  res.sendStatus(201);
+}
+);
+
+app.put('/user/nadia', (req, res) => {
+  res.sendStatus(200);
+});
+
+app.delete('/user/nadia', (req, res) => {
+  res.sendStatus(200);
+}
+);
+
+app.patch('/user/nadia', (req, res) => {
+  res.sendStatus(200);
+});
+
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

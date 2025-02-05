@@ -2197,9 +2197,45 @@ app.get('/about', (req, res) => {
 });
 ```
 
+### Postman
 
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 
+HTTP Response Status Code
+- 200 OK
+- 201 Created
+- 400 Bad Request
+- 404 Not Found
+- 500 Internal Server Error
+- 401 Unauthorized
+- 403 Forbidden
+Informational responses (100-199)
+Successful responses(200-299)
+Redirection messages (300-399)
+Client error responses (400-499)
+Server error responses (500-599)
 
+inspect
+Network
+Preserve log - checked
+
+1** - Hold on
+2** Here you go
+3** - go away
+4** - You f**ked up
+5** - I (server) f**ked up
+
+---
+POST request - usually html form
+- sign up
+- login
+go to server
+
+Postman
 
 
 
