@@ -2237,8 +2237,9 @@ go to server
 
 Postman
 
-
-
+## Express Middleware
+Middleware is a function that has access to the request object (req), the response object (res),
+and the next middleware function in the application’s request-response cycle.
 
 
 
