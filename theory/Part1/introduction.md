@@ -2241,6 +2241,26 @@ Postman
 Middleware is a function that has access to the request object (req), the response object (res),
 and the next middleware function in the application’s request-response cycle.
 
+between row request before the go to final destination
+
+- authentication
+- authorization
+- logging
+- error handling
+- static file serving
+
+npm body-parser
+
+```
+<form action ="/login" method="POST">
+<label for="email">Email</label>
+<input type="email" name="email" id="email" required>
+<label for="password">Password</label>
+<input type="password" name="password" id="password" required>
+<button type="submit" value="submit"> Login</button>
+</form>
+
+
 
 
 
