@@ -2279,6 +2279,89 @@ app.get("/", (req, res) => {
 5. Specify .urlencoded({extended:true}) to create a body for URL-encoded requests like our form submission
 6. Write a .post ("/submit") handler where you console.log() the form contents when the user clicks the submit button
 
+```
+import express from "express";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import  bodyParser  from "body-parser";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const app = express();
+const port = 3000;
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+  res.sendStatus(201);
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+```
+### custom middleware
+
+Middleware
+- pre-processing (example, body-parser)
+- post-processing (example, logging)
+- error handling (example, error handling middleware)
+- authentication (example, authentication middleware)
+
+login - morgan package npm
+
+```
+import morgan from "morgan";
+app.use(morgan("dev"));
+
+```
+
+### DIY Middleware
+- create a function that takes in a request and response object
+```
+app.use((req,res, next)=>{
+  console.log("Request method:", req.method);
+  next();
+})
+```
+
+### project
+```
+import express from "express";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import  bodyParser  from "body-parser";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+
+const app = express();
+const port = 3000;
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+  res.send(`<div> <h1>${req.body.street}</h1><h3>${req.body.pet}</h3></div>`);
+  res.sendStatus(201);
+});
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+```
 
 
 
