@@ -2344,7 +2344,15 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = 3000;
+let bandName = "";
 app.use(bodyParser.urlencoded({ extended: true }));
+
+function bandNameGenerator(req, res, next) {
+  console.log(req.body);
+  bandName = req.body["street"] + " " + req.body["pet"];
+next();
+};
+app.use(bandNameGenerator);
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
@@ -2353,13 +2361,14 @@ app.get("/", (req, res) => {
 
 
 app.post("/submit", (req, res) => {
-  console.log(req.body);
-  res.send(`<div> <h1>${req.body.street}</h1><h3>${req.body.pet}</h3></div>`);
+
+  res.send(`<h1> Your band name is ${bandName}</h1>`);
   res.sendStatus(201);
 });
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
 
 ```
 
