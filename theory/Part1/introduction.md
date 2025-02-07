@@ -2260,6 +2260,26 @@ npm body-parser
 <button type="submit" value="submit"> Login</button>
 </form>
 
+```
+dynamicly
+
+```
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+```
+1. use npm install the body-parser module
+2. run index1.js with nodemon
+3. import the body-parser module
+4. Mount the middleware using the Express .use() method
+5. Specify .urlencoded({extended:true}) to create a body for URL-encoded requests like our form submission
+6. Write a .post ("/submit") handler where you console.log() the form contents when the user clicks the submit button
+
+
 
 
 
