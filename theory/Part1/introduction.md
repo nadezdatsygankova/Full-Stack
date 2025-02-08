@@ -2413,6 +2413,41 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 ```
+## Embedded JS - EJS
+
+Templating
+
+Separation of Concerns
+HTML and CSS ||| JS
+
+Structure and style are separated from Functionality
+Frontend | Backend
+Templating Language
+- handlebars
+- EJS
+
+```
+app post("/submit", (req, res)=>{
+  res.render("index.ejs",
+  {name: req.body["name]})
+}
+)
+
+<body>
+<h1>
+Hello <%= name %>
+</h1>
+</body>
+```
+EJS language support plugin
+
+1. Create a new folder called "EJS"
+2. Initialize NPM and install express and ejs
+3. Create the following files and folders: index.js, views/index.ejs
+4. Use the JS getDay() method to build a website that gives advice based on the day of the week
+
+
+
 
 
 
