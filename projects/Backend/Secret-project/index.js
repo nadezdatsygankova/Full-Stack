@@ -2,21 +2,22 @@
 import express from 'express';
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import  bodyParser  from "body-parser";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = 3000;
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+
+let userIsAuthenticated = false;
+
+
+app.use(express.urlencoded({ extended: true }));
 
 function checkPassword(req, res, next) {
   if (req.body.password === 'ILoveProgramming') {
-    next();
-  } else {
-    res.status(401).send('Incorrect password');
+    userIsAuthenticated = true;
   }
+  next();
 }
 
 
@@ -27,7 +28,11 @@ app.get('/', (req, res) => {
 app.use(checkPassword);
 
 app.post('/check', (req, res) => {
+  if (userIsAuthenticated) {
   res.sendFile(__dirname + "/public/secret.html");
+  } else {
+    res.redirect('/');
+  }
 });
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
