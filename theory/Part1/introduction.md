@@ -2447,7 +2447,32 @@ EJS language support plugin
 4. Use the JS getDay() method to build a website that gives advice based on the day of the week
 
 
+### EJS Tags - 209
 
+```
+<% console.log("hello") %> - EJS code , not in output
+<%= variable %> - HTML
+<%- <h1>Hello</h1>%> - HTML with no escaping (it will be Hello)
+<%# %> - Comments
+<%== %> - HTML with escaping
+<%% %%> - show EJS tag
+<% - include ("header.ejs")%> - include another file, for example for footer and header
+
+```
+```
+let bowl = ["Apple", "Oranges"];
+app.get("/", (req, res) =>{
+  res.render("index.ejs", {fruits: bowl});
+});
+
+<body>
+<ul>
+<% for (let i =0; i < fruits.length; i++){ %>
+<li><%= fruits[i] %></li>
+<% } %>
+</ul>
+</body>
+```
 
 
 
