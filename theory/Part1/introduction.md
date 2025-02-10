@@ -2542,6 +2542,22 @@ app.post("/submit", (req, res) => {
   });
 ```
 
+### EJS Partial and Layouts
+
+We create public folder where we add all static files. It can be images and styles
+we can use middleware
+public should be in root
+```
+app.use(express.static("public"));
+```
+
+public/styles/content
+
+in ejs
+```
+<link src="/styles/layout.css">
+
+```
 
 
 
