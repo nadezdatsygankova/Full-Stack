@@ -2473,10 +2473,91 @@ app.get("/", (req, res) =>{
 </ul>
 </body>
 ```
+Task - EJS-tags
+```
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJS Tags</title>
+</head>
 
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Current second:
+    <%= seconds %>
+  </p>
+  <% if (seconds % 2 === 0) { %>
+  <ul>
+    <% items.forEach((fruit) => { %>
+    <li>
+      <%= fruit %>
+    </li>
+    <% }) %>
+  </ul>
+  <% } else { %>
+  <p>No items to display</p>
+  <% } %>
+  <%- htmlContent %>
+  <%- include("footer.ejs") %>
+</body>
 
+</html>
+```
+### EJS & Passing Data
+important to use local.
+```
+app.get("/", (req,res)=>{
+  res.render("index.ejs");
+});
+//check if fruits = true
+<% if (local.fruits){ %>
+<ul>
+<% fruits.forEach((fruit) => { %>
+<li>
+<%= fruit %>
+</li>
+<%}>%>
+</ul>
+<% } %>
 
+```
+Version with form
+
+```
+index.ejs
+<form action="/submit" method ="POST">
+<input type="text" name="fName" placeholder="Enter your first name">
+<input type="text" name="lName" placeholder="Enter your last name">
+<input type="submit" value="Submit">
+</form>
+
+index.js
+app.post("/submit", (req, res) => {
+  res.render("index.ejs", { name: req.body["fName] });
+  });
+```
+
+### EJS Partial and Layouts
+
+We create public folder where we add all static files. It can be images and styles
+we can use middleware
+public should be in root
+```
+app.use(express.static("public"));
+```
+
+public/styles/content
+
+in ejs
+```
+<link src="/styles/layout.css">
+
+```
 
 
 
