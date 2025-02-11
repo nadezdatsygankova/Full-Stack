@@ -2558,11 +2558,22 @@ in ejs
 <link src="/styles/layout.css">
 
 ```
+#### Templating
 
+```
+<%- include ("header")%>
+<%- include ("footer")%>
 
+```
+render always relative to location to the view folder
 
+#### Band Generator Project
 
-
+```
+<% if (local.adjective && local.noun) { %>
+  <h1>Your band name could be: "The <%= adjective %> <%= noun %>"</h1><% } %>
+<% else { %> <h1>Generate a Band Name</h1> <% } %>
+```
 
 
 
