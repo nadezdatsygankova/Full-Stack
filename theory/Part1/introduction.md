@@ -2558,8 +2558,14 @@ in ejs
 <link src="/styles/layout.css">
 
 ```
+#### Templating
 
+```
+<%- include ("header")%>
+<%- include ("footer")%>
 
+```
+render always relative to location to the view folder
 
 
 
