@@ -2574,6 +2574,24 @@ render always relative to location to the view folder
   <h1>Your band name could be: "The <%= adjective %> <%= noun %>"</h1><% } %>
 <% else { %> <h1>Generate a Band Name</h1> <% } %>
 ```
+### GIT, GITHUB and Version Control
+
+Create local repository to track file changes
+
+```
+inside folder ->
+ -> git init
+ staging area
+ -> git status
+ adding
+ -> git add .
+ commit in version control
+ -> git commit -m "initial commit"
+    - Present tense - initial commit
+    - Complete Chapter 1
+all commit
+-> git log
+
 
 
 
