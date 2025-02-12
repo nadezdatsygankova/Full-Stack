@@ -2592,6 +2592,21 @@ inside folder ->
 all commit
 -> git log
 
+revert changes in my local directory
+-> git diff chapter1.txt
+-> git checkout chapter1.txt. - file that we want revert to last version was committed
+```
+#### GitHub and Remote repository
+```
+//remote created
+-> git remote add origin https://github.com/username/repository.git
+//push local to remote
+-> git push -u origin main
+
+in github -> insights -> Network
+
+
+
 
 
 
