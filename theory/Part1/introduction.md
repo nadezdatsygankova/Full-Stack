@@ -2618,6 +2618,12 @@ Undo staging area
 -> git rm --cached -r .
 if use *.txt -> all txt file will be ignore
 
+#### Git clone
+
+-> git clone url
+-> git clone https://github.com/username/repository.git
+
+
 
 
 
