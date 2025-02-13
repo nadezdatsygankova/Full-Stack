@@ -2668,7 +2668,38 @@ API will return data in JSON format
   for email
   i post data
   they return successful response
-  
+
+ Different type of API
+ - GraphQL
+ - REST
+ - SOAP
+ - gRPC
+
+ it is just set of rules
+
+ REST API
+ - use HTTP Protocol to interact with the API
+ - use HTTP methods (GET, POST, PUT, DELETE)
+ - use HTTP status codes (200, 404, 500)
+ - use JSON format to return data
+ - use URL to identify resources
+ - use HTTP headers to pass additional information
+ - use query parameters to pass additional information
+ - use body to pass additional information
+ - use authentication to secure the API
+ - use authorization to secure the API
+ - use caching to improve performance
+
+ --- https://wheretheiss.at/
+ ISS API
+International Space Station
+
+ documentation
+ https://wheretheiss.at/w/developer
+ 1. use postman
+ GET https://api.wheretheiss.at/v1/satellites/25544
+ 2. copy latitude,longitude and put in google map to see location of ISS
+
 
 
 
