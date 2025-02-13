@@ -2623,6 +2623,18 @@ if use *.txt -> all txt file will be ignore
 -> git clone url
 -> git clone https://github.com/username/repository.git
 
+examples for open source
+https://github.com/MunGell/awesome-for-beginners
+
+#### branching and merging
+
+-> git branch name-of-branch
+-> git checkout name-of-branch
+-> git merge name-of-branch
+:q! - exit vs code
+-> git push origin main -u
+
+
 
 
 
