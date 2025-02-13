@@ -2652,6 +2652,24 @@ when you fork -> you owned
 -> delete fork
 
 insight - network
+# API
+## Introduction to APIs
+API stands for Application Programming Interface. It is a set of defined rules that enables different applications to communicate with each other. APIs allow developers to access data or functionality from another application, service, or system
+
+- OpenWeather app
+they created API
+
+make a request (GET) from my website through the API
+API will return data
+my website will use the data
+API will return data in JSON format
+
+- Mailchimp
+  for email
+  i post data
+  they return successful response
+  
+
 
 
 
