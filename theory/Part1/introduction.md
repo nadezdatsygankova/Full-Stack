@@ -2634,6 +2634,24 @@ https://github.com/MunGell/awesome-for-beginners
 :q! - exit vs code
 -> git push origin main -u
 
+learning -> https://learngitbranching.js.org
+
+#### Forking and PR
+when you fork -> you owned
+-> you can do everything you like with copy of repositories
+
+-> fork
+-> clone
+-> create new branch
+-> make changes
+-> commit
+-> push
+-> create pull request
+-> merge
+-> delete branch
+-> delete fork
+
+insight - network
 
 
 
