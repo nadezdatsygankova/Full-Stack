@@ -2604,6 +2604,57 @@ revert changes in my local directory
 -> git push -u origin main
 
 in github -> insights -> Network
+```
+#### Git ignore
+
+API keys
+password
+.DS_store files
+->  ls -a
+see all hidden files
+
+->  touch .gitignore
+Undo staging area
+-> git rm --cached -r .
+if use *.txt -> all txt file will be ignore
+
+#### Git clone
+
+-> git clone url
+-> git clone https://github.com/username/repository.git
+
+examples for open source
+https://github.com/MunGell/awesome-for-beginners
+
+#### branching and merging
+
+-> git branch name-of-branch
+-> git checkout name-of-branch
+-> git merge name-of-branch
+:q! - exit vs code
+-> git push origin main -u
+
+learning -> https://learngitbranching.js.org
+
+#### Forking and PR
+when you fork -> you owned
+-> you can do everything you like with copy of repositories
+
+-> fork
+-> clone
+-> create new branch
+-> make changes
+-> commit
+-> push
+-> create pull request
+-> merge
+-> delete branch
+-> delete fork
+
+insight - network
+
+
+
 
 
 
