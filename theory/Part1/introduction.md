@@ -2604,6 +2604,21 @@ revert changes in my local directory
 -> git push -u origin main
 
 in github -> insights -> Network
+```
+#### Git ignore
+
+API keys
+password
+.DS_store files
+->  ls -a
+see all hidden files
+
+->  touch .gitignore
+Undo staging area
+-> git rm --cached -r .
+if use *.txt -> all txt file will be ignore
+
+
 
 
 
