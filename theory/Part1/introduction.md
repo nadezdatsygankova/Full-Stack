@@ -2742,6 +2742,42 @@ GET https://bored-api.appbrewery.com/activity/3943506
 
 http://localhost:4000/activity/3943506
 
+### JSON
+JavaScript Object Notation
+It's a way format data that can be sent over the internet in a readable but also efficient way.
+
+It is structured after JS object
+key -value
+```
+{
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+}
+
+```
+JSON is used for data exchange between web servers, web applications, and web services.
+JSON is a lightweight, easy-to-read data interchange format that is widely used in web development.
+JSON is a subset of the JavaScript programming language, but it is not specific to JavaScript.
+
+[json](https://jsonviewer.stack.hu)
+
+Serialization
+- converting data into a format that can be sent over the internet
+```
+const jsonData = JSON.stringify(data);
+data is JS object;
+
+```
+Parse
+- converting data from a string into a JS object
+```
+const data = JSON.parse(jsonData);
+```
+background - pattern.monster website
+- https://www.pattern-monster.com/
+
+
 
 
 
