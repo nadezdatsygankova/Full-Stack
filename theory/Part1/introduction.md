@@ -2700,9 +2700,47 @@ International Space Station
  GET https://api.wheretheiss.at/v1/satellites/25544
  2. copy latitude,longitude and put in google map to see location of ISS
 
+## Structuring API Requests
 
+Your server talks with somebody else server using Public API
 
+### API Endpoint
+#### BaseURL/Endpoint
+- https://api.example.com/users
+- https://api.example.com/users/1
 
+#### Query Parameters
+- https://api.example.com/users?name=John
+- https://api.example.com/users?name=John&age=30
+- https://api.example.com/users?name=John&age=30&country=USA
+- https://api.example.com/users?name=John&age=30&country=USA&
+
+start with ?
+after key-value pair
+additional query parameter - &
+
+http://localhost:4000/filter?type=social&participants=2
+http://localhost:4000/filter?type=social&participants=2&sort=asc
+
+For filtering and searching
+
+#### Path parameters
+/endpoint/{path-parameter}
+- https://api.example.com/users/1
+- https://api.example.com/users/1/comments
+
+id, username
+
+More for identifying resource by some specific parameter
+
+URL Parameters:
+
+key: The unique key of the activity.
+Example Request:
+
+GET https://bored-api.appbrewery.com/activity/3943506
+
+http://localhost:4000/activity/3943506
 
 
 
