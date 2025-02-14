@@ -2652,8 +2652,95 @@ when you fork -> you owned
 -> delete fork
 
 insight - network
+# API
+## Introduction to APIs
+API stands for Application Programming Interface. It is a set of defined rules that enables different applications to communicate with each other. APIs allow developers to access data or functionality from another application, service, or system
 
+- OpenWeather app
+they created API
 
+make a request (GET) from my website through the API
+API will return data
+my website will use the data
+API will return data in JSON format
+
+- Mailchimp
+  for email
+  i post data
+  they return successful response
+
+ Different type of API
+ - GraphQL
+ - REST
+ - SOAP
+ - gRPC
+
+ it is just set of rules
+
+ REST API
+ - use HTTP Protocol to interact with the API
+ - use HTTP methods (GET, POST, PUT, DELETE)
+ - use HTTP status codes (200, 404, 500)
+ - use JSON format to return data
+ - use URL to identify resources
+ - use HTTP headers to pass additional information
+ - use query parameters to pass additional information
+ - use body to pass additional information
+ - use authentication to secure the API
+ - use authorization to secure the API
+ - use caching to improve performance
+
+ --- https://wheretheiss.at/
+ ISS API
+International Space Station
+
+ documentation
+ https://wheretheiss.at/w/developer
+ 1. use postman
+ GET https://api.wheretheiss.at/v1/satellites/25544
+ 2. copy latitude,longitude and put in google map to see location of ISS
+
+## Structuring API Requests
+
+Your server talks with somebody else server using Public API
+
+### API Endpoint
+#### BaseURL/Endpoint
+- https://api.example.com/users
+- https://api.example.com/users/1
+
+#### Query Parameters
+- https://api.example.com/users?name=John
+- https://api.example.com/users?name=John&age=30
+- https://api.example.com/users?name=John&age=30&country=USA
+- https://api.example.com/users?name=John&age=30&country=USA&
+
+start with ?
+after key-value pair
+additional query parameter - &
+
+http://localhost:4000/filter?type=social&participants=2
+http://localhost:4000/filter?type=social&participants=2&sort=asc
+
+For filtering and searching
+
+#### Path parameters
+/endpoint/{path-parameter}
+- https://api.example.com/users/1
+- https://api.example.com/users/1/comments
+
+id, username
+
+More for identifying resource by some specific parameter
+
+URL Parameters:
+
+key: The unique key of the activity.
+Example Request:
+
+GET https://bored-api.appbrewery.com/activity/3943506
+
+http://localhost:4000/activity/3943506
 
 
 
