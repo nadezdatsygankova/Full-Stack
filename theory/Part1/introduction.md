@@ -2777,6 +2777,9 @@ const data = JSON.parse(jsonData);
 background - pattern.monster website
 - https://www.pattern-monster.com/
 
+### Server-side API request
+- API request that is made from the server to another server
+- used for data exchange between servers
 
 
 
