@@ -2777,11 +2777,24 @@ const data = JSON.parse(jsonData);
 background - pattern.monster website
 - https://www.pattern-monster.com/
 
-### Server-side API request
+### Server-side API request using Node and Axios
 - API request that is made from the server to another server
 - used for data exchange between servers
 
+My server makes to request to someone server
 
+```
+import axios from "axios";
+const url = "https://bored-api.appbrewery.com/activity/3943506";
+axios.get(url)
+.then((response) => {
+  console.log(response.data);
+  })
+  .catch((error) => {
+    console.error(error);
+    });
+
+ ```
 
 
 
