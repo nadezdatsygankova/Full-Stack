@@ -2814,6 +2814,200 @@ app.get("/", async (req, res) => {
 examples
 https://docs.zenquotes.io/zenquotes-documentation/
 
+### API Authentication
+- API authentication is the process of verifying the identity of a user or client before allowing them to access
+- API resources
+- API authentication is typically done using a combination of a username and password, or an API key
+- API keys are unique strings that are used to identify a client or user
+- API keys can be used to authenticate API requests, and can be used to track usage and billing
+- API authentication can be done using various methods, including
+- Basic Auth
+- Bearer Token
+- OAuth
+
+4 tiers
+0. No authentication
+1. Basic Auth
+2. API KEY authentication
+3. Token Based Authentication
+
+- no authentication
+  Rate limit - 100/15 min
+  IP address - limit
+  public API
+
+- basic authentication
+
+username and password
+you have account in API provider
+Base64 Encoding in Header
+username: password
+we convert to Base64
+we put in header
+
+https://secrets-api.appbrewery.com/
+
+Postman
+GET https://secrets-api.appbrewery.com/all?page=1
+Authorization
+Basic Auth
+username: password
+
+```
+nadiard
+nadiard
+```
+
+First
+POST /register
+in body
+```
+{
+  "username": "username",
+  "password": "password"
+  }
+```
+  "username": "nadiard",
+  "password": "nadiard"
+
+- API Key Authorization
+client allows to use your server
+API key is a string
+
+First
+```
+GET /generate-api-key
+Generates a new API key.
+
+Example Request:
+
+GET https://secrets-api.appbrewery.com/generate-api-key
+Example Response:
+
+{
+  "apiKey": "generated-api-key"
+}
+```
+
+I get "apiKey": "74b3d8d3-9994-4c50-9fe3-da59dff14188"
+
+
+Second
+
+```
+GET /filter
+Returns a random secret with a particular embarrassment score or higher. API key authentication is required.
+
+Query Parameters:
+
+apiKey: Your API Key generated from the /generate-api-key endpoint.
+score: The minimum embarrassment score to filter by.
+Example Request:
+
+GET https://secrets-api.appbrewery.com/filter?score=5&apiKey=74b3d8d3-9994-4c50-9fe3-da59dff14188
+Example Response:
+
+[
+    {
+      "id": "1",
+      "secret": "This is a secret with embarrassment score 5 or higher.",
+      "emScore": 5,
+      "username": "user123",
+      "timestamp": "2022-10-01T12:34:56Z"
+    },
+    {
+      "id": "2",
+      "secret": "Another secret with embarrassment score 5 or higher.",
+      "emScore": 7,
+      "username": "user123",
+      "timestamp": "2022-10-02T10:11:12Z"
+    }
+    // ... more secrets ...
+  ]
+
+  ```
+in postman
+GET
+parameters score 7
+authorization
+key apiKey
+value 74b3d8d3-9994-4c50-9fe3
+add to Query Params
+
+- Token Based Authentication
+first
+User uses
+username
+password
+to login
+server generates
+token for API
+
+-- OAUTH
+Username and password in API provider
+API providers generate the token
+The token is passed to you as 3-rd party
+You can use the token to access the API
+
+for example
+our app sign in with Google
+google generate the token
+and give us the token
+we can use the token to access the google API calendar
+
+First
+```
+POST /get-auth-token
+Generates an authentication token for a user. If the user does not exist or the password is incorrect, it will return an error.
+
+Request Body:
+
+{
+  "username": "The username of the registered user.",
+  "password": "The password of the registered user."
+}
+Example Request in body
+
+POST https://secrets-api.appbrewery.com/get-auth-token
+{
+  "username": "jackbauer",
+  "password": "IAmTheBest"
+}
+Example Response:
+
+{
+  "token": "generated-auth-token"
+}
+```
+I get
+```
+ {
+    "token": "389f3fdc-b685-44a5-bfea-c5f95f3bff5a"
+}
+```
+Second
+
+```
+GET /secrets/{id}
+Returns the secret with the specified ID. Bearer token authentication is required.
+
+URL Parameters:
+
+id: The ID of the secret to retrieve.
+Example Request:
+
+GET https://secrets-api.appbrewery.com/secrets/1
+Example Response:
+
+{
+  "id": "1",
+  "secret": "This is a secret.",
+  "emScore": 3,
+  "username": "user123",
+  "timestamp": "2022-10-01T12:34:56Z"
+}
+```
+
 
 
 
