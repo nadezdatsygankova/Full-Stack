@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
   try {
-    const response = await axios.get("https://bored-api.appbrewery.com/random");
+    const response = await axios.get("https://apis.scrimba.com/bored/api/activity");
     const result = response.data;
     console.log(result);
     res.render("solution.ejs", { data: result });
