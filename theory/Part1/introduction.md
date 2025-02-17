@@ -2795,7 +2795,12 @@ axios.get(url)
     });
 
  ```
+or
+```
+import axios from "axios";
+const url = "https://apis.scrimba.com/bored/";
 
+app.get("/", )
 
 
 
