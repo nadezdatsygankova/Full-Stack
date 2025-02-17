@@ -2795,6 +2795,24 @@ axios.get(url)
     });
 
  ```
+or
+```
+app.get("/", async (req, res) => {
+  try {
+    const response = await axios.get("https://bored-api.appbrewery.com/random");
+    const result = response.data;
+    res.render("index.ejs", { data: result });
+  } catch (error) {
+    console.error("Failed to make request:", error.message);
+    res.render("index.ejs", {
+      error: error.message,
+    });
+  }
+});
+```
+
+examples
+https://docs.zenquotes.io/zenquotes-documentation/
 
 
 
