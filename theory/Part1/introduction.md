@@ -2814,6 +2814,63 @@ app.get("/", async (req, res) => {
 examples
 https://docs.zenquotes.io/zenquotes-documentation/
 
+### API Authentication
+- API authentication is the process of verifying the identity of a user or client before allowing them to access
+- API resources
+- API authentication is typically done using a combination of a username and password, or an API key
+- API keys are unique strings that are used to identify a client or user
+- API keys can be used to authenticate API requests, and can be used to track usage and billing
+- API authentication can be done using various methods, including
+- Basic Auth
+- Bearer Token
+- OAuth
+
+4 tiers
+0. No authentication
+1. Basic Auth
+2. API KEY authentication
+3. Token Based Authentication
+
+- no authentication
+  Rate limit - 100/15 min
+  IP address - limit
+  public API
+
+- basic authentication
+
+username and password
+you have account in API provider
+Base64 Encoding in Header
+username: password
+we convert to Base64
+we put in header
+
+https://secrets-api.appbrewery.com/
+
+Postman
+GET https://secrets-api.appbrewery.com/all?page=1
+Authorization
+Basic Auth
+username: password
+
+```
+nadiard
+nadiard
+```
+
+First
+POST /register
+in body
+```
+{
+  "username": "username",
+  "password": "password"
+  }
+```
+  "username": "nadiard",
+  "password": "nadiard"
+
+
 
 
 
