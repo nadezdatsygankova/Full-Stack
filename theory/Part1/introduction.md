@@ -3028,4 +3028,22 @@ async function getUser() {
 .then - old version
 
 
+### API project
+
+https://github.com/appbrewery/public-api-lists
+
+My project is [Book dictionary app ](https://github.com/nadezdatsygankova/book-dictionary-app)
+
+## Build your own API
+
+### DIY API
+
+Rapid API
+https://rapidapi.com/
+https://rapidapi.com/hub
+
+1. You have a large Data Collection
+2. Algorithm/ Service than people can using you API
+3. Simplify interface
+
 
