@@ -3038,12 +3038,48 @@ My project is [Book dictionary app ](https://github.com/nadezdatsygankova/book-d
 
 ### DIY API
 
+Public APIs
+
 Rapid API
 https://rapidapi.com/
 https://rapidapi.com/hub
 
 1. You have a large Data Collection
-2. Algorithm/ Service than people can using you API
-3. Simplify interface
+2. Algorithm/ Service than people can using you API - ChatGPT
+3. Simplify interface - domino's pizza API
+
+Internal APIs
+- not support for external use
+- but somebody can use it
+
+REST API
+What makes an API RESTful?
+Rule
+1. Use HTTP methods (GET, POST, PUT, PATCH, DELETE)
+2. It should standard have a standard data format that it responds with.
+It can be JSON format, the JS Object Notation, or something like XML
+This is response to calling the API and the response is given back to the client and RESTful APIs
+3. Client- Server are completely separate.
+They are not on the same system or in the same file and they're able to message each other over a network.
+The can message to each other to order to make requests and also to get back responses.
+And this part of the RESTful API architecture allows each side to be able to scale independently from each other and they can evolve and be completely build separately by different people, which means that RESTfull API allows the whole system to scale very easily.
+
+4. Statelessness
+Each request from the client to the server should contain all the information
+that's needed understand and process the request.
+So the server shouldn't storing any sort of client side, state or client side data between the requests.
+
+Each single request can be completed and each single response is also complete without need to know what happened previously
+
+5. Resource - Based
+API that is centered around resources and uses a Unique Resource Identifier, also known as a Resource Locator,
+(URI/URL)in order to locate specific resources.
+
+The Internet - implementation REST- API
+
+Joke API
+
+
+
 
 
