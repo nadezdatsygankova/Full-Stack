@@ -3086,7 +3086,17 @@ we use postman to get request
 req.params.id = string
 parseInt(req.params.id) -> convert in integer
 
+```//1. GET a random joke
 
+app.get("/random", (req, res)=>{
+  const randomIndex = Math.floor(Math.random()* jokes.length);
+  res.send(jokes[randomIndex])
+})
+
+
+```
+find (callback)
+if true => return object 
 
 
 
