@@ -3078,6 +3078,13 @@ API that is centered around resources and uses a Unique Resource Identifier, als
 The Internet - implementation REST- API
 
 Joke API
+https://documenter.getpostman.com/view/6048123/2s9XxsTv8Y
+
+project is in DIY API folder
+we use postman to get request
+
+req.params.id = string
+parseInt(req.params.id) -> convert in integer
 
 
 
