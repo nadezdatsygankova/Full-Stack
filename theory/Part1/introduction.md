@@ -3202,6 +3202,11 @@ app.delete("/jokes", (req, res) => {
 });
 
 ```
+### Build your own API for blog
+
+folder Blog+API+Project
+nodemon server.js
+nodemon solution.js
 
 
 
