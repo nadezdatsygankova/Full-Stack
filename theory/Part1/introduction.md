@@ -3096,7 +3096,33 @@ app.get("/random", (req, res)=>{
 
 ```
 find (callback)
-if true => return object 
+if true => return object
+
+```
+//2. GET a specific joke
+app.get("/jokes/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const foundJoke = jokes.find((joke) => joke.id === id);
+  res.json(foundJoke);
+});
+
+//3. GET a jokes by filtering on the joke type
+app.get("/filter", (req, res) => {
+  const type = req.query.type;
+  const filteredActivities = jokes.filter((joke) => joke.jokeType === type);
+  res.json(filteredActivities);
+});
+```
+POST
+Postman
+POST
+->
+x-www-form-urlendcoded
+text
+type
+
+```
+
 
 
 
