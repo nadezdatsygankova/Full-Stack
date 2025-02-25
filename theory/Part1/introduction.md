@@ -3210,5 +3210,24 @@ nodemon solution.js
 
 # Databases
 ## SQL and NoSQL
+Data storage
 
+Types of Databases
+SQL DB
+ structured query language
+ table with name, password
+ relational database - relations between tables
+ Oracle database
+ MySql
+ PostgreSQL
+
+ NoSQL DB
+ flexibility
+ can modify on the fly
+ we can change to modify
+  MongoDb
+  Radis
+  DymanDb
+
+## 
 
