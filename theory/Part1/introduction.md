@@ -3291,3 +3291,19 @@ DELETE FROM products
 WHERE id = 2
 
 ```
+### relationship
+```
+CREATE TABLE orders (
+  id INT Not NULL,
+  order_number INT,
+  customer_id INT,
+  product_id INT,
+  PRIMARY KEY (id),
+  FOREIGN KEY (customer_id) REFERENCES customers (id)
+  FOREIGN KEY (product_id) REFERENCES products(id)
+  )
+  ```
+```
+INSERT INTO orders
+VALUES (2, 3254, 1, 1);
+```
