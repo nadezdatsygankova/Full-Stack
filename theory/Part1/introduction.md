@@ -3229,5 +3229,41 @@ SQL DB
   Radis
   DymanDb
 
-## 
+## SQL
+### SQL Commands CREATE Table and INSERT Data
+
+Create
+Read
+Update
+Destroy
+
+CRUD
+```
+CREATE TABLE customers (
+   id int,
+   first_name varchar(255),
+   last_name varchar(255),
+   address varchar(255)
+  );
+
+```
+```
+CREATE TABLE products (
+   id int NOT NULL,
+   name varchar(255),
+   price MONEY,
+   PRIMARY KEY (id)
+  );
+
+```
+```
+INSERT INTO products
+VALUES (1, 'Pen', 1.5);
+```
+Show everything
+```
+Select * from products
+```
+### 
+
 
