@@ -3284,4 +3284,10 @@ ALTER TABLE products
 ADD stock MONEY;
 
 ```
+### Destroy
 
+```
+DELETE FROM products
+WHERE id = 2
+
+```
