@@ -3229,5 +3229,91 @@ SQL DB
   Radis
   DymanDb
 
-## 
+## SQL
+### SQL Commands CREATE Table and INSERT Data
+https://sqliteonline.com/
 
+Create
+Read
+Update
+Destroy
+
+CRUD
+```
+CREATE TABLE customers (
+   id int,
+   first_name varchar(255),
+   last_name varchar(255),
+   address varchar(255)
+  );
+
+```
+```
+CREATE TABLE products (
+   id int NOT NULL,
+   name varchar(255),
+   price MONEY,
+   PRIMARY KEY (id)
+  );
+
+```
+```
+INSERT INTO products
+VALUES (1, 'Pen', 1.5);
+```
+Show everything
+```
+Select * from products
+```
+### READ
+```
+SELECT name, id from products
+SELECT name, id from products where price >1
+
+```
+### UPDATE
+```
+UPDATE products
+SET price = 2.6
+WHERE id =2
+```
+Add new column to the table
+
+```
+ALTER TABLE products
+ADD stock MONEY;
+
+```
+### Destroy
+
+```
+DELETE FROM products
+WHERE id = 2
+
+```
+### relationship
+```
+CREATE TABLE orders (
+  id INT Not NULL,
+  order_number INT,
+  customer_id INT,
+  product_id INT,
+  PRIMARY KEY (id),
+  FOREIGN KEY (customer_id) REFERENCES customers (id)
+  FOREIGN KEY (product_id) REFERENCES products(id)
+  )
+  ```
+```
+INSERT INTO orders
+VALUES (2, 3254, 1, 1);
+```
+```
+SELECT orders.order_number, customers.first_name, customers.last_name, customers.address
+FROM orders
+INNER JOIN customers ON orders.customer_id = customers.id;
+```
+```
+SELECT orders.order_number, products.name, products.price, products.stock
+FROM orders
+INNER JOIN products ON orders.product_id = products.id;
+```
