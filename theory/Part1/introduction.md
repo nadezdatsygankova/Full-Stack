@@ -3231,6 +3231,7 @@ SQL DB
 
 ## SQL
 ### SQL Commands CREATE Table and INSERT Data
+https://sqliteonline.com/
 
 Create
 Read
@@ -3264,6 +3265,23 @@ Show everything
 ```
 Select * from products
 ```
-### 
+### READ
+```
+SELECT name, id from products
+SELECT name, id from products where price >1
 
+```
+### UPDATE
+```
+UPDATE products
+SET price = 2.6
+WHERE id =2
+```
+Add new column to the table
+
+```
+ALTER TABLE products
+ADD stock MONEY;
+
+```
 
