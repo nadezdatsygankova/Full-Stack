@@ -3352,5 +3352,34 @@ CREATE TABLE capitals (
   capital varchar(45)
 );
 ```
+we can import our csv to the datatable
+1. create a table
+2. import
+options - header
 
+## project
 
+1. npm i pg
+2. index.js
+ ```
+ import pg from "pg";
+
+ const db = new pg.Client({
+  user: "postgres",
+  host: "localhost",
+  database: "world",
+  password: "123456",
+  port: 5432,
+});
+db.connect();
+
+db.query("SELECT * FROM capitals", (err, res) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  quiz = res.rows;
+}
+);
+
+```
