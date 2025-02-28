@@ -3340,3 +3340,17 @@ varchar - variable characters - max 50 - great too
 char(50)- not decries
 text - decries, but not max - very often
 
+## pgAdmin
+csv - comma separated values
+
+capitals.csv
+
+```
+CREATE TABLE capitals (
+  id Serial PRIMARY KEY,
+  country varchar(45),
+  capital varchar(45)
+);
+```
+
+
