@@ -3317,3 +3317,13 @@ SELECT orders.order_number, products.name, products.price, products.stock
 FROM orders
 INNER JOIN products ON orders.product_id = products.id;
 ```
+## PostgreSQL
+node-postgres
+
+https://www.npmjs.com/package/pg
+
+we need
+1. postgres server
+2. pdAdmin (UI)
+
+
