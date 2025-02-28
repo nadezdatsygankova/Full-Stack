@@ -3317,3 +3317,40 @@ SELECT orders.order_number, products.name, products.price, products.stock
 FROM orders
 INNER JOIN products ON orders.product_id = products.id;
 ```
+## PostgreSQL
+node-postgres
+
+https://www.npmjs.com/package/pg
+
+we need
+1. postgres server
+2. pdAdmin (UI)
+
+```
+CREATE TABLE friends (
+  id Serial PRIMARY KEY,
+  name varchar(50),
+  age int,
+  is_cool boolean
+);
+```
+if serial - auto
+varchar - variable characters - max 50 - great too
+    if less - decries size
+char(50)- not decries
+text - decries, but not max - very often
+
+## pgAdmin
+csv - comma separated values
+
+capitals.csv
+
+```
+CREATE TABLE capitals (
+  id Serial PRIMARY KEY,
+  country varchar(45),
+  capital varchar(45)
+);
+```
+
+
