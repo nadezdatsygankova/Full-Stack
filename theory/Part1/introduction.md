@@ -3383,3 +3383,41 @@ db.query("SELECT * FROM capitals", (err, res) => {
 );
 
 ```
+## query data using SELECT, WHERE and LIKE
+```
+create table world_food (
+  id serial primary key,
+  country varchar(45),
+  rice_production float,
+  wheat_production float
+);
+
+select * from world_food;
+select country from world_food;
+select country, rice_production from world_food;
+
+select country, rice_production
+from world_food
+where rice_production > 10;
+
+```
+LIKE %
+```
+select country, rice_production
+from world_food
+where country LIKE 'U%'
+```
+and with a
+```
+select country, rice_production
+from world_food
+where country LIKE '%a'
+```
+## travel tracker
+
+```
+create table visited_countries (
+  id serial primary key,
+  country_code char(2) NOT NULL unique
+);
+```
