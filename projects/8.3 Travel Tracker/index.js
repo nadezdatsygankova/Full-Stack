@@ -29,6 +29,13 @@ app.get("/", async (req, res) => {
   db.end();
 });
 
+app.post("/add", async (req, res) => {
+  const input = req.body["country"];
+  console.log(input);
+  await db.query(`INSERT INTO visited_countries (country_code) VALUES ('${input}')`);
+  res.redirect("/");
+});
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
