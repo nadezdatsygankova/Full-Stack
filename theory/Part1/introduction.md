@@ -3402,4 +3402,22 @@ where rice_production > 10;
 
 ```
 LIKE %
+```
+select country, rice_production
+from world_food
+where country LIKE 'U%'
+```
+and with a
+```
+select country, rice_production
+from world_food
+where country LIKE '%a'
+```
+## travel tracker
 
+```
+create table visited_countries (
+  id serial primary key,
+  country_code char(2) NOT NULL unique
+);
+```
