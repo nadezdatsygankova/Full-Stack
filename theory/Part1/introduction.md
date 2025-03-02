@@ -3421,3 +3421,25 @@ create table visited_countries (
   country_code char(2) NOT NULL unique
 );
 ```
+### insert
+```
+INSERT into TABLE
+(column1, column2)
+value
+(value1, value2)
+
+insert into world_food
+(country, rice_production, wheat_production)
+values ('Italy', 1.46, 7.3)
+```
+```
+select country
+from world_food
+where country LIKE '%'||'a"
+```
+```
+ const result = await db.query(
+      "SELECT country_code FROM countries WHERE LOWER(country_name) = '&'|| $1 ||'%';",
+      [input.toLowerCase()]
+    );
+```
