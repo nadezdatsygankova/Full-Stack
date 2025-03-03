@@ -3443,3 +3443,20 @@ where country LIKE '%'||'a"
       [input.toLowerCase()]
     );
 ```
+### relationship
+one to one relationship
+
+id in student table === id in contact table
+
+```
+create table student (
+  id SERIAL PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT
+)
+create table contact_detail (
+  id integer references student(id) unique,
+  tel text,
+  address text
+)
+
