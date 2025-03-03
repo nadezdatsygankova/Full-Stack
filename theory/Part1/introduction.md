@@ -3444,7 +3444,7 @@ where country LIKE '%'||'a"
     );
 ```
 ### relationship
-one to one relationship
+#### one to one relationship
 
 id in student table === id in contact table
 
@@ -3588,3 +3588,23 @@ JOIN users
 ON users.id = user_id;
 
 ```
+#### one to many relationships
+one to many
+ student - PK >>> Homework Submission - student_id -> FK
+many to one
+ ```
+ CREATE TABLE student (
+  id SERIAL PRIMARY KEY, -> PK
+  first_name TEXT,
+  last_name TEXT
+);
+
+CREATE TABLE homework_submission (
+  id SERIAL PRIMARY KEY,
+  mark INTEGER,
+  student_id INTEGER REFERENCES student(id) -> FK
+);
+
+
+ ```
+
