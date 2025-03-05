@@ -3666,4 +3666,33 @@ SELECT s.id AS id, first_name, last_name, title
 FROM enrollment AS e
 JOIN student AS s ON s.id = e.student_id
 JOIN class AS c ON c.id = e.class_id;
+
+SELECT s.id AS id, first_name, last_name, title
+FROM enrollment e
+JOIN student s ON s.id = e.student_id
+JOIN class c ON c.id = e.class_id;
+
+```
+you can set it without AS
+enrollment e
+
+### the family travel tracker
+```
+create table visited_countries (
+  id serial primary key,
+  country_code char(2) NOT NULL unique,
+  user_id INTEGER REFERENCES users(id)
+);
+
+create table users (
+  id serial primary key,
+  name varchar(15) NOT NULL unique,
+  color varchar(15)
+);
+
+
+INSERT INTO visited_countries
+(country_code, user_id)
+VALUES ('CA', 1), ('FR', 1);
+
 ```
