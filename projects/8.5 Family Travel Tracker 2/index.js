@@ -9,7 +9,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: "rrr",
   port: 5432,
 });
 db.connect();
@@ -65,9 +65,18 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
-app.post("/user", async (req, res) => {});
+app.post("/user", async (req, res) => {
+  const name = req.body["name"];
+  const color = req.body["color"];
+  console.log(name, color);
+  //Hint: The RETURNING keyword can return the data that was inserted.
+  //https://www.postgresql.org/docs/current/dml-returning.html
+});
 
 app.post("/new", async (req, res) => {
+  const name = req.body["name"];
+  const color = req.body["color"];
+  console.log(name, color);
   //Hint: The RETURNING keyword can return the data that was inserted.
   //https://www.postgresql.org/docs/current/dml-returning.html
 });

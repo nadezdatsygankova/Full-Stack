@@ -3690,4 +3690,9 @@ create table users (
   color varchar(15)
 );
 
+
+INSERT INTO visited_countries
+(country_code, user_id)
+VALUES ('CA', 1), ('FR', 1);
+
 ```
