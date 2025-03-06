@@ -3677,6 +3677,8 @@ you can set it without AS
 enrollment e
 
 ### the family travel tracker
+1 to many
+
 ```
 create table visited_countries (
   id serial primary key,
