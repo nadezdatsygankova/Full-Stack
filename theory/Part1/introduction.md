@@ -3698,3 +3698,26 @@ INSERT INTO visited_countries
 VALUES ('CA', 1), ('FR', 1);
 
 ```
+### alter - change table
+```
+alter table student
+rename to user;
+
+alter table student
+alter column first_name TYPE VARCHAR(20);
+
+alter table student
+add column first_name TYPE VARCHAR(20);
+
+create table example (
+  a integer,
+  b integer,
+  c integer,
+  unique(a,c);
+)
+it is combination a +c -> unique
+
+alter table visited_countries
+ADD unique(user_id,country_code)
+
+```
