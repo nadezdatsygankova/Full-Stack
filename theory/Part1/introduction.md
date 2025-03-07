@@ -3721,3 +3721,8 @@ alter table visited_countries
 ADD unique(user_id,country_code)
 
 ```
+drop table <name of table>
+
+```
+Drop table if exists visited_countries, users;
+
