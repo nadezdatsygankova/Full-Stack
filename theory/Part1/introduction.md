@@ -3726,3 +3726,15 @@ drop table <name of table>
 ```
 Drop table if exists visited_countries, users;
 
+```
+UPDATE <TABLE TO UPDATE>
+SET <COLUMN TO UPDATE> = value,
+WHERE <SOME CONDITION>;
+
+select * from new_table
+order by id ASC;
+DESC 8,7,6,5,4,3,
+## permalist project
+
+table items
+
