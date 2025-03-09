@@ -25,9 +25,18 @@ app.post("/add", (req, res) => {
   res.redirect("/");
 });
 
-app.post("/edit", (req, res) => {});
+app.post("/edit", (req, res) => {
+  const item = req.body.newItem;
+  items.push({ title: item });
+  res.redirect("/");
+});
 
-app.post("/delete", (req, res) => {});
+app.post("/delete", (req, res) => {
+  const id = req.body.deleteItemId;
+  items = items.filter((item) => item.id !==
+    parseInt(id));
+  res.redirect("/");
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
