@@ -3745,4 +3745,10 @@ CREATE TABLE items (
 
 INSERT INTO items (title) VALUES ('Buy milk'), ('Finish homework');
 ```
+8.6 permalist project with database
+
+## Authentication
+6 levels
+
+### 1 level - 9.1.
 
