@@ -12,7 +12,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "secrets",
-  password: "eee",
+  password: "Volgograd",
   port: 5432,
 });
 db.connect();
@@ -36,12 +36,22 @@ app.post("/register", async (req, res) => {
   const email = req.body.username;
   const password = req.body.password;
   try {
-    await db.query("INSERT INTO users (email, password) VALUES ($1, $2)", [email, password]);
-    res.redirect("/");
-  } catch (err) {
-    console.log(err);
+  const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [email]);
+  if (checkResult.rows.length > 0) {
+    res.send("Email already exists. Try logging in.");
+    return;
   }
-});
+  else{
+
+      await db.query("INSERT INTO users (email, password) VALUES ($1, $2)", [email, password]);
+      res.render("secrets.ejs");
+    }
+
+  } catch (err) {
+      console.log(err);
+    }
+  }
+);
 
 app.post("/login", async (req, res) => {
   const email = req.body.username;
