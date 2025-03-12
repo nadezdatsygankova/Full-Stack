@@ -12,7 +12,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "secrets",
-  password: "gb",
+  password: "tgt",
   port: 5432,
 });
 db.connect();
@@ -58,12 +58,24 @@ app.post("/login", async (req, res) => {
   const password = req.body.password;
   try {
     const result = await db.query(
-      "SELECT id FROM users WHERE email = $1 AND password = $2 ORDER BY id ASC",
-      [email, password]);
+      "SELECT * FROM users WHERE email = $1",
+      [email]);
     if (result.rows.length > 0) {
       currentUserId = result.rows[0].id;
+      if (result.rows[0].password === password) {
+        res.render("secrets.ejs");
+        return;
+      }
+      else {
+        res.send("Wrong password");
+        return;
+      }
     }
-    res.redirect("/");
+    else {
+      res.send("User not found");
+      return;
+    }
+
   } catch (err) {
     console.log(err);
   }
