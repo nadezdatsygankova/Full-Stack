@@ -19,7 +19,10 @@ app.get("/register", (req, res) => {
   res.render("register.ejs");
 });
 
-app.post("/register", async (req, res) => {});
+app.post("/register", async (req, res) => {
+  console.log(req.body.username);
+  console.log(req.body.password);
+});
 
 app.post("/login", async (req, res) => {});
 
