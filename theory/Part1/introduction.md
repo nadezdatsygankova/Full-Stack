@@ -3872,3 +3872,22 @@ https://en.wikipedia.org/wiki/List_of_the_most_common_passwords
 https://haveibeenpwned.com/
 https://hackertyper.net/
 https://plaintextoffenders.com/
+
+#### level 3 - how to salt password for improved encryption
+
+password + salt (random series of character ). + hash function => hash
+in database we store hash + salt
+
+#### bcryprt hashes
+salt rounds
+how many times
+1 round
+password + random number (salt) -> hash function => hash
+2 round
+hash + the same random number (salt)=> hash function => new hash
+
+you set number of rounds
+
+in database we store
+username - salt - Hash *10
+
