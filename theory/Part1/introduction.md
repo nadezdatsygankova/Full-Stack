@@ -3846,4 +3846,24 @@ encryption and caching
 
 Encryption
 covert information to the code
-Caesar Cipher
+Caesar Cipher - weak
+
+ABCDEF
+key = 4
+A becomes E
+EFGHIGK
+
+Password + key = (cipher method) -> ciphertext
+Book - the code book by Simon singh
+
+aes256 - what we use now
+use key
+
+Hashing - more secure
+
+we need hashing function
+
+password use hashing function -> hash
+hushing function is mathematical function
+easy to covert, but it is difficult to return
+
