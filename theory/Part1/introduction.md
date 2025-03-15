@@ -3891,3 +3891,13 @@ you set number of rounds
 in database we store
 username - salt - Hash *10
 
+npm bcrypt
+
+9.2 folder
+
+```
+import bcrypt from "bcrypt";
+const saltRounds = 10;
+
+const hashedPassword = await bcrypt.hash(password, saltRounds);
+
