@@ -3841,4 +3841,9 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 ```
+### 2 level
+encryption and caching
 
+Encryption
+covert information to the code
+Caesar Cipher
