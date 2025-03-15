@@ -3867,3 +3867,8 @@ password use hashing function -> hash
 hushing function is mathematical function
 easy to covert, but it is difficult to return
 
+http://password-checker.online-domain-tools.com/
+https://en.wikipedia.org/wiki/List_of_the_most_common_passwords
+https://haveibeenpwned.com/
+https://hackertyper.net/
+https://plaintextoffenders.com/
