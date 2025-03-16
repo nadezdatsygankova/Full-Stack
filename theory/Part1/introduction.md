@@ -3912,4 +3912,31 @@ const hashedPassword = await bcrypt.hash(password, saltRounds);
           }
         }})
 ```
+#### managing cookies and sessions
+
+Retargeting ads -
+one a user comes to your website, initiate some sort of buying behavior, and they decide to abandon cart, you save what it is that they wanted, and then on other websites, or when they come back onto your website, you remind them about that thing that they wanted to buy.
+
+1. Browser -> get request to amazon server
+Amazon Server will then respond to that request and send over the HTML, CSS, and JS files that are needed for my browser to be able to render the Amazon website.
+
+when we decided to add computer in to the cart
+-> post request to the amazon servers
+and it's at this moment in time when Amazon servers will create a cookie that contains that data
+server responds to the post request, that cookie gets sent
+along and the browser gets told to save that cookie.
+
+If I came back tomorrow this cookie it still in my browser
+the next time that I make a GET request to Amazon server, that cookie gets sent along with my GET request to allow the server to be able to identify who I am and see if I had any previous sessions on Amazon.
+They could respond with the HTML, CSS, JS and also render my cart do that the computer is already added in the cart
+
+Session
+A session is a period of time when a browser interacts with a server.
+Usually when you log in to a website, that's when your session starts, and that's when your fortune cookie gets created.
+And inside the fortune cookie, you'll have your user credentials that says, "This user is logged in and has been successfully authenticated."
+
+=> that means as you continue to browse the website, you won't be asked to log in again when you try to access a page that requires authentication, because they can always check against that active cookie that you have on your browser, and it maintains your authentication for this browsing session until the point when you log out, which is when this session ends,and the cookie that's related to this session gets destroyed.
+
+#### Passport
+project 9.3
 
