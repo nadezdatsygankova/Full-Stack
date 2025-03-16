@@ -3901,3 +3901,15 @@ const saltRounds = 10;
 
 const hashedPassword = await bcrypt.hash(password, saltRounds);
 
+   bcrypt.compare(loginPassword, storedHashedPassword, (err, result) => {
+        if (err) {
+          console.error("Error comparing passwords:", err);
+        } else {
+          if (result) {
+            res.render("secrets.ejs");
+          } else {
+            res.send("Incorrect Password");
+          }
+        }})
+```
+
