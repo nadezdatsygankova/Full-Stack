@@ -3932,4 +3932,11 @@ They could respond with the HTML, CSS, JS and also render my cart do that the co
 
 Session
 A session is a period of time when a browser interacts with a server.
+Usually when you log in to a website, that's when your session starts, and that's when your fortune cookie gets created.
+And inside the fortune cookie, you'll have your user credentials that says, "This user is logged in and has been successfully authenticated."
+
+=> that means as you continue to browse the website, you won't be asked to log in again when you try to access a page that requires authentication, because they can always check against that active cookie that you have on your browser, and it maintains your authentication for this browsing session until the point when you log out, which is when this session ends,and the cookie that's related to this session gets destroyed.
+
+#### Passport
+project 9.3
 
