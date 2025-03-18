@@ -3940,3 +3940,10 @@ And inside the fortune cookie, you'll have your user credentials that says, "Thi
 #### Passport
 project 9.3
 
+new:
+express-session
+passport
+passport-local
+
+https://www.passportjs.org/
+
