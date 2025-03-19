@@ -4115,4 +4115,10 @@ env.config();
 import env from "dotenv";
 ```
 
-
+### Oauth - Open Authorisation
+social
+if they use facebook
+bracebook get request to facebook
+facebook to return post request list of users emails
+compare database from facebook and bracebook database
+and see if we have any matches
