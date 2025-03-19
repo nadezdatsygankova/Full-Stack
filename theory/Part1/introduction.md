@@ -4115,4 +4115,23 @@ env.config();
 import env from "dotenv";
 ```
 
+### Oauth - Open Authorisation
+social
+if they use facebook
+bracebook get request to facebook
+facebook to return post request list of users emails
+compare database from facebook and bracebook database
+and see if we have any matches
+
+Why OAuth?
+1. Granular Access Levels
+- you can ask for specific information from Facebook - profile and email
+2. Read/ Read-Write Access
+3. Revoke access
+
+We have to set up the app in developer console on Facebook, Google
+we go App id or client Id
+when they sign in using Facebook
+our website gets Auth code from Facebook
+exchange Auth code to Access Token from Facebook, we will save it into the database
 
