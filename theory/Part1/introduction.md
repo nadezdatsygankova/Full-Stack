@@ -4363,6 +4363,10 @@ var ReactDom = require("react-dom");
 ReactDom.render(<h1>Hello</h1>, document.getElementById("root"));
 ```
 Babel - js compiler
+<h1></h1> compile file using React
+Babel converted to html
+https://babeljs.io/
+
 
 
 
