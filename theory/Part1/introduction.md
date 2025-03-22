@@ -4350,3 +4350,20 @@ website like Fiverr
 js library
 front-end
 https://codesandbox.io/
+
+1. npm create vite@latest my-react-app --template react
+2. cd my-react-app
+3. npm install
+4. npm run dev
+
+```
+var React = require("react");
+var ReactDom = require("react-dom");
+
+ReactDom.render(<h1>Hello</h1>, document.getElementById("root"));
+```
+Babel - js compiler
+
+
+
+
