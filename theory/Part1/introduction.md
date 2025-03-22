@@ -4367,7 +4367,19 @@ Babel - js compiler
 Babel converted to html
 https://babeljs.io/
 
+new
+```
+import React from "react";
+import ReactDom from "react-dom";
 
+ReactDom.render(
+  <div>
+    <h1>Hello</h1>
+    <h2>World</h2>
+  </div>,
+  document.getElementById("root")
+);
+```
 
 
 
