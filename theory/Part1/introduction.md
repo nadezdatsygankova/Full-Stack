@@ -4380,6 +4380,24 @@ ReactDom.render(
   document.getElementById("root")
 );
 ```
+```
+import React from "react";
+import ReactDom from "react-dom";
+
+ReactDom.render(
+  <div>
+    <h1> My Favorite Food </h1>
+    <ul>
+      <li>Sushi</li>
+      <li>Potatoes</li>
+      <li>Tomatoes</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+
+```
+
 
 
 
