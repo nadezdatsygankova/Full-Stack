@@ -4413,5 +4413,17 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+code inside {}
+```
+    <p> Your lucky number is {Math.floor(Math.random() * 10)}</p>
 
+```
+'if' doesn't work in {}
 
+expression => it is a piece of code that resolves to a value, becomes the value
+statement => ask to do some work, instruction, an action (for, if , while)
+https://www.youtube.com/watch?v=WVyCrI1cHi8&list=PL-xu4i_QDSxcoDNeh8rx5-pHCCTOg0XsI
+
+```
+<h1>Hello, I am {`${firstName} ${lastName}`}!</h1>
+```
