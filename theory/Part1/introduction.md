@@ -4397,7 +4397,33 @@ ReactDom.render(
 );
 
 ```
+## JSX
+Js -> HTML inside -> Js inside
 
+```
+import React from "react";
+import ReactDOM from "react-dom";
+const name = "Nadia";
+const numberLucky = 6;
+ReactDOM.render(
+  <div>
+    <h1>Hello {name}</h1>
+    <p> Your lucky number is {numberLucky}</p>
+  </div>,
+  document.getElementById("root")
+);
+```
+code inside {}
+```
+    <p> Your lucky number is {Math.floor(Math.random() * 10)}</p>
 
+```
+'if' doesn't work in {}
 
+expression => it is a piece of code that resolves to a value, becomes the value
+statement => ask to do some work, instruction, an action (for, if , while)
+https://www.youtube.com/watch?v=WVyCrI1cHi8&list=PL-xu4i_QDSxcoDNeh8rx5-pHCCTOg0XsI
 
+```
+<h1>Hello, I am {`${firstName} ${lastName}`}!</h1>
+```
