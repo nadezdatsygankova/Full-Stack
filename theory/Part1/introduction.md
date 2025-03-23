@@ -4397,7 +4397,21 @@ ReactDom.render(
 );
 
 ```
+## JSX
+Js -> HTML inside -> Js inside
 
-
+```
+import React from "react";
+import ReactDOM from "react-dom";
+const name = "Nadia";
+const numberLucky = 6;
+ReactDOM.render(
+  <div>
+    <h1>Hello {name}</h1>
+    <p> Your lucky number is {numberLucky}</p>
+  </div>,
+  document.getElementById("root")
+);
+```
 
 
