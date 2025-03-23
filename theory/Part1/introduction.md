@@ -4424,6 +4424,22 @@ expression => it is a piece of code that resolves to a value, becomes the value
 statement => ask to do some work, instruction, an action (for, if , while)
 https://www.youtube.com/watch?v=WVyCrI1cHi8&list=PL-xu4i_QDSxcoDNeh8rx5-pHCCTOg0XsI
 
+ES6
 ```
 <h1>Hello, I am {`${firstName} ${lastName}`}!</h1>
+```
+```
+import React from "react";
+import ReactDOM from "react-dom";
+
+const name = "Nadia";
+
+ReactDOM.render(
+  <div>
+    <p> Created by {name}</p>
+    <p> Copyright {new Date().getFullYear()}</p>
+  </div>,
+
+  document.getElementById("root")
+);
 ```
