@@ -4474,4 +4474,9 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+contentEditable="true"
+```
+https://www.w3schools.com/tags/ref_standardattributes.asp
+```
+    <h1 className="heading" contentEditable="true" spellcheck="false">
 ```
