@@ -4443,3 +4443,35 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+
+class -> className
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSX</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="../src/index.js" type="text/JSX"></script>
+  </body>
+</html>
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+  <div>
+    <h1 className="heading">My Favourite Foods</h1>
+    <ul>
+      <li>Bacon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+
+```
