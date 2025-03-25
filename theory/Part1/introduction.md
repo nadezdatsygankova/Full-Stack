@@ -4480,3 +4480,23 @@ https://www.w3schools.com/tags/ref_standardattributes.asp
 ```
     <h1 className="heading" contentEditable="true" spellcheck="false">
 ```
+option+ mouse - multiple line
+
+https://picsum.photos/
+
+```
+import React from "react";
+import ReactDOM from "react-dom";
+const img = "https://picsum.photos/200";
+
+ReactDOM.render(
+  <div>
+    <h1 className="heading" contentEditable="true" spellcheck="false">
+      My Favourite Foods
+    </h1>
+    <img src={img} />
+  </div>,
+  document.getElementById("root")
+);
+
+```
