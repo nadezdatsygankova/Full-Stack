@@ -4500,3 +4500,6 @@ ReactDOM.render(
 );
 
 ```
+```
+ReactDOM.render(<h1 style={{color: "red"}}>Hello World!</h1>, document.getElementById("root"));
+```
