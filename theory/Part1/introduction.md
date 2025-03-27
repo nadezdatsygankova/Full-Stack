@@ -4520,4 +4520,30 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
-### react styling practice
+### React styling practice
+
+```
+import React from "react";
+import ReactDom from "react-dom";
+
+let message = "";
+let color = "";
+const date = new Date().getHours();
+if (date > 0 && date < 12) {
+  message = "Good morning!";
+  color = "red";
+} else if (date > 12 && date < 18) {
+  message = "Good Afternoon";
+  color = "green";
+} else {
+  message = "Good evening";
+  color = "blue";
+}
+console.log(date);
+
+ReactDom.render(
+  <h1 style={{ color: color }}>{message}</h1>,
+
+  document.getElementById("root")
+);
+```
