@@ -4660,4 +4660,31 @@ function List() {
 }
 export default List;
 ```
+1. Create App.jsx
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(
+  <div>
+    <App />
+  </div>,
+  document.getElementById("root")
+);
+
+import React from "react";
+import Heading from "./Heading";
+import List from "./List";
+
+function App() {
+  return (
+    <div>
+      <Heading />
+      <List />
+    </div>
+  );
+}
+export default App;
+```
 
