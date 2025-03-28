@@ -4580,3 +4580,111 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+### react component
+
+```
+function Heading (){
+return (
+  <h1>My Favourite Foods</h1>
+)
+}
+
+ReactDOM.render(
+  <div>
+    <Heading />
+    <ul>
+      <li>Bacon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+
+```
+
+jsx style - https://github.com/airbnb/javascript/tree/master/react
+
+1. create Header.jsx in src
+2. index.js
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import Heading from "./Heading";
+
+ReactDOM.render(
+  <div>
+    <Heading />
+    <ul>
+      <li>Bacon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+```
+3. in Heading.jsx
+```
+import React from "react";
+
+function Heading() {
+  return <h1>My Favourite Foods</h1>;
+}
+
+export default Heading;
+```
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import Heading from "./Heading";
+import List from "./List";
+
+ReactDOM.render(
+  <div>
+    <Heading />
+    <List/>
+  </div>,
+  document.getElementById("root")
+);
+import React from "react";
+
+function List() {
+  return (
+    <ul>
+      <li>Bacon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
+  );
+}
+export default List;
+```
+1. Create App.jsx
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(
+  <div>
+    <App />
+  </div>,
+  document.getElementById("root")
+);
+
+import React from "react";
+import Heading from "./Heading";
+import List from "./List";
+
+function App() {
+  return (
+    <div>
+      <Heading />
+      <List />
+    </div>
+  );
+}
+export default App;
+```
+
