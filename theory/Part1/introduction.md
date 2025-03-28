@@ -4602,3 +4602,35 @@ ReactDOM.render(
 );
 
 ```
+
+jsx style - https://github.com/airbnb/javascript/tree/master/react
+
+1. create Header.jsx in src
+2. index.js
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import Heading from "./Heading";
+
+ReactDOM.render(
+  <div>
+    <Heading />
+    <ul>
+      <li>Bacon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+```
+3. in Heading.jsx
+```
+import React from "react";
+
+function Heading() {
+  return <h1>My Favourite Foods</h1>;
+}
+
+export default Heading;
+```
