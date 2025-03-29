@@ -4711,4 +4711,14 @@ function doublePi() {
 
 export { pi, doublePi };
 ```
+it can be
+```
+import * as pi from "./math.js";
 
+pi.doublePi{}
+
+or
+```
+if export is -> export default pi;
+import PI from './math.jsx'
+```
