@@ -4689,3 +4689,71 @@ export default App;
 ```
 folder -> components
 
+### Js
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import { pi, doublePi } from "./math.js";
+
+ReactDOM.render(
+  <ul>
+    <li>{pi}</li>
+    <li>{doublePi()}</li>
+    <li>3</li>
+  </ul>,
+  document.getElementById("root")
+);
+
+const pi = 3.14;
+function doublePi() {
+  return pi * 2;
+}
+
+export { pi, doublePi };
+```
+it can be
+```
+import * as pi from "./math.js";
+
+pi.doublePi{}
+
+or
+```
+if export is -> export default pi;
+import PI from './math.jsx'
+```
+
+```
+function add(n1, n2) {
+  return n1 + n2;
+}
+
+function multiply(n1, n2) {
+  return n1 * n2;
+}
+
+function subtract(n1, n2) {
+  return n1 - n2;
+}
+
+function divide(n1, n2) {
+  return n1 / n2;
+}
+
+export { add, multiply, subtract, divide };
+
+import React from "react";
+import ReactDOM from "react-dom";
+import { add, multiply, subtract, divide } from "./calculator";
+
+ReactDOM.render(
+  <ul>
+    <li>{add(1, 2)}</li>
+    <li>{multiply(2, 3)}</li>
+    <li>{subtract(7, 2)}</li>
+    <li>{divide(5, 2)}</li>
+  </ul>,
+  document.getElementById("root")
+);
+
+```
