@@ -4794,4 +4794,73 @@ ReactDOM.render(
 );
 
 ```
+### React card project
+
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import "./../public/styles.css";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+----
+import React from "react";
+import Card from "./Card";
+import contacts from "../contacts";
+console.log(contacts);
+
+function App() {
+  return (
+    <div>
+      <h1 className="heading">My Contacts</h1>
+      <div>
+        <Card
+          name={contacts[0].name}
+          alt={contacts[0].name}
+          imgURL={contacts[0].imgURL}
+          phone={contacts[0].phone}
+          email={contacts[0].email}
+        />
+        <Card
+          name={contacts[1].name}
+          alt={contacts[1].name}
+          imgURL={contacts[1].imgURL}
+          phone={contacts[1].phone}
+          email={contacts[1].email}
+        />
+        <Card
+          name={contacts[2].name}
+          alt={contacts[2].name}
+          imgURL={contacts[2].imgURL}
+          phone={contacts[2].phone}
+          email={contacts[2].email}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+import React from "react";
+
+function Card(props) {
+  return (
+    <div className="card">
+      <div className="top">
+        <h2 className="name">{props.name}</h2>
+        <img className="circle-img" src={props.imgURL} alt={props.imgURL} />
+      </div>
+      <div className="bottom">
+        <p className="info">{props.phone}</p>
+        <p className="info">b@beyonce.com</p>
+      </div>
+    </div>
+  );
+}
+
+export default Card;
+
+```
 
