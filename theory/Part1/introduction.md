@@ -4864,3 +4864,25 @@ export default Card;
 
 ```
 
+```
+function Card(props) {
+  return (
+    <div className="card">
+      <div className="top">
+        <h2 className="name">{props.name}</h2>
+        <Avatar src={props.imgURL} alt={props.name} />
+      </div>
+      <div className="bottom">
+        <p className="info">{props.phone}</p>
+        <p className="info">{props.email}</p>
+      </div>
+    </div>
+  );
+}
+
+export default Card;
+function Avatar(props) {
+  return <img className="circle-img" src={props.src} alt={props.alt} />;
+}
+```
+
