@@ -4909,4 +4909,52 @@ function Detail(props) {
   return <p className="info">{props.detailInfo}</p>;
 }
 ```
+#### maping
+
+```
+import React from "react";
+import Card from "./Card";
+import contacts from "../contacts";
+function createCard(contact) {
+  return (
+    <Card
+      key={contact.id}
+      id={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      tel={contact.phone}
+      email={contact.email}
+    />
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1 className="heading">My Contacts</h1>
+      {contacts.map(createCard)}
+    </div>
+  );
+}
+
+export default App;
+```
+```
+function Card(props) {
+  console.log(props);
+  return (
+    <div className="card">
+      <div className="top">
+        <p>{props.id}</p>
+        <h2 className="name">{props.name}</h2>
+        <Avatar img={props.img} />
+      </div>
+      <div className="bottom">
+        <Detail detailInfo={props.tel} />
+        <Detail detailInfo={props.email} />
+      </div>
+    </div>
+  );
+}
+```
 
