@@ -5002,3 +5002,73 @@ function App() {
 
 export default App;
 ```
+### Map -Create a new array by doing something with each item in an array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+```
+var numbers = [3, 56, 2, 48, 5];
+
+
+const newNumbers = numbers.map(function (x) {
+    return x*2;
+})
+```
+#### Filter - Create a new array by keeping the items that return true.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+```
+const newNumbersFilter= numbers.filter(function(num){
+    return num >10
+})
+```
+
+#### Reduce - Accumulate a value by doing something to each item in an array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+```
+let newNumberReduce = numbers.reduce(
+    function(accumulator, currentNumber){
+        return accumulator + currentNumber;
+    }
+)
+```
+
+#### Find - find the first item that matches from an array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+
+```
+const numberFind = numbers.find(function (num) {
+  return num > 10;
+});
+```
+
+#### FindIndex - find the index of the first item that matches.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+
+```
+const numberFindIndex = numbers.findIndex(function (num) {
+    return num > 10;
+});
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+
+#### Substring
+```
+const str = "Mozilla";
+
+console.log(str.substring(1, 3));
+// Expected output: "oz"
+
+console.log(str.substring(2));
+// Expected output: "zilla"
+```
+
+```
+import emojipedia from "./emojipedia";
+
+console.log(emojipedia);
+
+const NewMeaning = emojipedia.map(function cut(item) {
+  return item.meaning.substring(0,100);
+});
+
+console.log(NewMeaning);
+```
