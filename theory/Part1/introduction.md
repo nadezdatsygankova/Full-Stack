@@ -5026,3 +5026,42 @@ let newNumberReduce = numbers.reduce(
     }
 )
 ```
+
+#### Find - find the first item that matches from an array.
+```
+const numberFind = numbers.find(function (num) {
+  return num > 10;
+});
+```
+
+#### FindIndex - find the index of the first item that matches.
+```
+const numberFindIndex = numbers.findIndex(function (num) {
+    return num > 10;
+});
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+
+#### Substring
+```
+const str = "Mozilla";
+
+console.log(str.substring(1, 3));
+// Expected output: "oz"
+
+console.log(str.substring(2));
+// Expected output: "zilla"
+```
+
+```
+import emojipedia from "./emojipedia";
+
+console.log(emojipedia);
+
+const NewMeaning = emojipedia.map(function cut(item) {
+  return item.meaning.substring(0,100);
+});
+
+console.log(NewMeaning);
+```
