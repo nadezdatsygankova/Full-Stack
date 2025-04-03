@@ -5019,3 +5019,10 @@ const newNumbersFilter= numbers.filter(function(num){
 ```
 
 #### Reduce - Accumulate a value by doing something to each item in an array.
+```
+let newNumberReduce = numbers.reduce(
+    function(accumulator, currentNumber){
+        return accumulator + currentNumber;
+    }
+)
+```
