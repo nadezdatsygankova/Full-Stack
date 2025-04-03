@@ -5002,3 +5002,20 @@ function App() {
 
 export default App;
 ```
+### Map -Create a new array by doing something with each item in an array.
+```
+var numbers = [3, 56, 2, 48, 5];
+
+
+const newNumbers = numbers.map(function (x) {
+    return x*2;
+})
+```
+#### Filter - Create a new array by keeping the items that return true.
+```
+const newNumbersFilter= numbers.filter(function(num){
+    return num >10
+})
+```
+
+#### Reduce - Accumulate a value by doing something to each item in an array.
