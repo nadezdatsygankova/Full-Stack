@@ -5095,3 +5095,26 @@ const newNumber = numbers.find(num => num > 10)
 const newNumber = numbers.findIndex(num => num > 10)
 
 ```
+```
+function App() {
+  return (
+    <div>
+      <h1>
+        <span>emojipedia</span>
+      </h1>
+      <dl className="dictionary">
+        {emojipedia.map((emojiTerm) => {
+          return (
+            <Entry
+              key={emojiTerm.id}
+              emoji={emojiTerm.emoji}
+              name={emojiTerm.name}
+              description={emojiTerm.meaning}
+            />
+          );
+        })}
+      </dl>
+    </div>
+  );
+}
+```
