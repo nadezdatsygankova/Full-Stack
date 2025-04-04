@@ -5169,3 +5169,16 @@ function App() {
     : <Login />}</div>;
 }
 ```
+&&
+expression && expression
+both are true
+
+&& in React
+condition && expression
+true && expression
+false && expression (not do expression)
+
+currentTime > 12 && <h1>Why</h1>
+true -> Why
+false -> nothing
+
