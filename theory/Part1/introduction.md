@@ -5118,3 +5118,43 @@ function App() {
   );
 }
 ```
+### conditional rendering
+single responsibly principle
+
+```
+import React from "react";
+
+let isLoggenIn = false;
+
+function Login(){
+  return (
+    <form className="form">
+      <Input type="text" placeholder="Username"/>
+      <Input type="password" placeholder="Password" />
+    <button type="submit">Login</button>
+  </form>
+  )
+}
+
+function Input(props){
+  return(
+    <input type={props.type} placeholder={props.placeholder} />
+  )
+}
+
+function renderConditionally() {
+  if (isLoggenIn) {
+    return <h1>Hello</h1>;
+  } else {
+    return (
+     <Login/>
+    );
+  }
+}
+
+function App() {
+  return <div className="container">{renderConditionally()}</div>;
+}
+
+export default App;
+```
