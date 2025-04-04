@@ -5158,3 +5158,14 @@ function App() {
 
 export default App;
 ```
+ternary operator
+
+condition ? do if true : do if false
+```
+function App() {
+  return <div className="container">
+    {isLoggenIn ?
+    <h1>Hello</h1>
+    : <Login />}</div>;
+}
+```
