@@ -5201,24 +5201,21 @@ export default App;
 import React from "react";
 
 function Form(props) {
-  console.log(props.user);
   let userIsRegistered = props.user;
   return (
     <div>
-      {userIsRegistered ? (
-        <form className="form">
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button type="submit">Register</button>
-        </form>
-      ) : (
-        <form className="form">
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+      <form className="form">
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        {!userIsRegistered && (
           <input type="password" placeholder="Confirm Password" />
+        )}
+        {userIsRegistered ? (
+          <button type="submit">Sign In</button>
+        ) : (
           <button type="submit">Register</button>
-        </form>
-      )}
+        )}
+      </form>
     </div>
   );
 }
