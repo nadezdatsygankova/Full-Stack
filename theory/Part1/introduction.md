@@ -5169,6 +5169,9 @@ function App() {
     : <Login />}</div>;
 }
 ```
+
+#### end operator
+
 &&
 expression && expression
 both are true
@@ -5181,4 +5184,46 @@ false && expression (not do expression)
 currentTime > 12 && <h1>Why</h1>
 true -> Why
 false -> nothing
+
+```
+var userIsRegistered = true;
+
+function App() {
+  return (
+    <div className="container">
+      <Form user={userIsRegistered} />
+    </div>
+  );
+}
+
+export default App;
+
+import React from "react";
+
+function Form(props) {
+  console.log(props.user);
+  let userIsRegistered = props.user;
+  return (
+    <div>
+      {userIsRegistered ? (
+        <form className="form">
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Register</button>
+        </form>
+      ) : (
+        <form className="form">
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
+          <button type="submit">Register</button>
+        </form>
+      )}
+    </div>
+  );
+}
+
+export default Form;
+```
+
 
