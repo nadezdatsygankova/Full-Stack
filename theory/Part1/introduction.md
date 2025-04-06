@@ -5223,4 +5223,18 @@ function Form(props) {
 export default Form;
 ```
 
+### State in React
 
+User Interface = function of the state of your app
+
+UI = f(State)
+
+Declarative programming
+We're writing the code, how our user interface should look under different conditions dependent upon the state.
+
+Imperative programming
+
+document.getElementById("root").style.textDecoration = "line-through"
+
+#### Hooks
+there are a function to allow us to hook into the state of our app or modify it.
