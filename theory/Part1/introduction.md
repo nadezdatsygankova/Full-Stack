@@ -5320,3 +5320,46 @@ function App() {
 }
 export default App;
 ```
+### React tasks
+1 tasks
+```
+import React, { useState } from "react";
+
+function App() {
+  let time = new Date().toLocaleTimeString().slice(0, 8);
+  const [currentTime, setCurrentTime] = useState(time);
+
+  function getCurrentTime() {
+    setCurrentTime(new Date().toLocaleTimeString().slice(0, 8));
+  }
+  return (
+    <div className="container">
+      <h1>{currentTime}</h1>
+      <button onClick={getCurrentTime}>Get Time</button>
+    </div>
+  );
+}
+
+export default App;
+```
+2 tasks
+```
+import React, { useState } from "react";
+
+function App() {
+  let time = new Date().toLocaleTimeString().slice(0, 8);
+  const [currentTime, setCurrentTime] = useState(time);
+
+  function getCurrentTime() {
+    setCurrentTime(new Date().toLocaleTimeString().slice(0, 8));
+  }
+  return (
+    <div className="container">
+      {setInterval(getCurrentTime, 1000) && <h1>{currentTime}</h1>}
+      <button onClick={getCurrentTime}>Get Time</button>
+    </div>
+  );
+}
+
+export default App;
+```
