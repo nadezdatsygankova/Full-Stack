@@ -5223,4 +5223,44 @@ function Form(props) {
 export default Form;
 ```
 
+### State in React
 
+User Interface = function of the state of your app
+
+UI = f(State)
+
+Declarative programming
+We're writing the code, how our user interface should look under different conditions dependent upon the state.
+
+Imperative programming
+
+document.getElementById("root").style.textDecoration = "line-through"
+
+```
+import React from "react";
+
+var isDone = false;
+
+function strike() {
+  isDone = true;
+}
+
+function unStrike() {
+  isDone = false;
+}
+
+function App() {
+  return (
+    <div>
+      <p style={isDone ? { textDecoration: "line-through" } : null}>Buy milk</p>
+      <button onClick={strike}>Change to strike through</button>
+      <button onClick={unStrike}>Change back</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Hooks
+there are a function to allow us to hook into the state of our app or modify it.
