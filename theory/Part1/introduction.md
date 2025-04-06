@@ -5264,3 +5264,102 @@ export default App;
 
 #### Hooks
 there are a function to allow us to hook into the state of our app or modify it.
+useState()
+you must use in functional component
+when state updates => update this part
+```
+import React, { useState } from "react";
+
+function App() {
+  const [count] = useState(0);
+
+  const [red, green, blue] = [9, 132, 227];
+  console.log(red);
+
+  function increase() {
+    // count++;
+  }
+  return (
+    <div className="container">
+      <h1>{count}</h1>
+      <button onClick={increase}>+</button>
+    </div>
+  );
+}
+export default App;
+```
+
+destructure complex structure
+
+```
+  const [red, green, blue] = [9, 132, 227];
+```
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const [red, green, blue] = [9, 132, 227];
+  console.log(red);
+
+  function increase() {
+    setCount(count + 1);
+  }
+  function decrease() {
+    setCount(count - 1);
+  }
+  return (
+    <div className="container">
+      <h1>{count}</h1>
+      <button onClick={increase}>+</button>
+      <button onClick={decrease}>-</button>
+    </div>
+  );
+}
+export default App;
+```
+### React tasks
+1 tasks
+```
+import React, { useState } from "react";
+
+function App() {
+  let time = new Date().toLocaleTimeString().slice(0, 8);
+  const [currentTime, setCurrentTime] = useState(time);
+
+  function getCurrentTime() {
+    setCurrentTime(new Date().toLocaleTimeString().slice(0, 8));
+  }
+  return (
+    <div className="container">
+      <h1>{currentTime}</h1>
+      <button onClick={getCurrentTime}>Get Time</button>
+    </div>
+  );
+}
+
+export default App;
+```
+2 tasks
+```
+import React, { useState } from "react";
+
+function App() {
+  let time = new Date().toLocaleTimeString().slice(0, 8);
+  const [currentTime, setCurrentTime] = useState(time);
+
+  function getCurrentTime() {
+    setCurrentTime(new Date().toLocaleTimeString().slice(0, 8));
+  }
+  return (
+    <div className="container">
+      {setInterval(getCurrentTime, 1000) && <h1>{currentTime}</h1>}
+      <button onClick={getCurrentTime}>Get Time</button>
+    </div>
+  );
+}
+
+export default App;
+```
