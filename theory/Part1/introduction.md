@@ -5363,3 +5363,16 @@ function App() {
 
 export default App;
 ```
+
+### Destructing
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
+
+https://codesandbox.io/p/sandbox/es6-destructuring-ide4v
+
+```
+const animals = [
+  { name: "cat", sound: "meow" },
+  { name: "dog", sound: "woof" }
+];
+
+```
