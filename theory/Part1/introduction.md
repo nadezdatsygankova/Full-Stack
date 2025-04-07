@@ -5376,6 +5376,29 @@ const animals = [
 ];
 
 import animals from "./data";
+//destructure array - name maybe be what ever you want
 let [cat, dog] = animals;
+//destructure object - name should be match with the property name
+const {name, sound} = cat;
+
+another options
+const { name: catName, sound: catSound } = cat;
+//if name is undefined
+const {name = "Fluffy", sound = "Purr"} = cat;
+
+----
+const animals = [
+  {
+    name: "cat",
+    sound: "meow",
+    feedind: {
+      food: 2,
+      water: 3,
+    },
+  },
+  { name: "dog", sound: "woof" },
+];
+const {name, sound, feedind:{food, water}} = cat;
+
 
 ```
