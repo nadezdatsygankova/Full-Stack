@@ -5375,4 +5375,7 @@ const animals = [
   { name: "dog", sound: "woof" }
 ];
 
+import animals from "./data";
+let [cat, dog] = animals;
+
 ```
