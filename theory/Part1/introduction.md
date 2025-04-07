@@ -5402,3 +5402,96 @@ const {name, sound, feedind:{food, water}} = cat;
 
 
 ```
+
+```
+const animals = [
+  {
+    name: "cat",
+    sound: "meow",
+    feedind: {
+      food: 2,
+      water: 3,
+    },
+  },
+  { name: "dog", sound: "woof" },
+];
+
+function useAnimals(animal) {
+  return [
+    animal.name,
+    function () {
+      console.log(animal.sound);
+    },
+  ];
+}
+
+export default animals;
+export { useAnimals };
+
+import animals, { useAnimals } from "./data";
+
+let [cat, dog] = animals;
+
+const [animal, makeSound] = useAnimals(cat);
+console.log(animal);
+makeSound(cat);
+```
+##### Cars
+```
+const cars = [
+  {
+    model: "Honda Civic",
+    //The top colour refers to the first item in the array below:
+    //i.e. hondaTopColour = "black"
+    coloursByPopularity: ["black", "silver"],
+    speedStats: {
+      topSpeed: 140,
+      zeroToSixty: 8.5,
+    },
+  },
+  {
+    model: "Tesla Model 3",
+    coloursByPopularity: ["red", "white"],
+    speedStats: {
+      topSpeed: 150,
+      zeroToSixty: 3.2,
+    },
+  },
+];
+
+export default cars;
+
+import cars from "./practice";
+
+let [honda, tesla] = cars;
+const {
+  coloursByPopularity: teslaTopColour,
+  speedStats: { topSpeed: teslaTopSpeed },
+} = honda;
+
+const {
+  coloursByPopularity: hondaTopColour,
+  speedStats: { topSpeed: hondaTopSpeed },
+} = tesla;
+
+ReactDOM.render(
+  <table>
+    <tr>
+      <th>Brand</th>
+      <th>Top Speed</th>
+    </tr>
+    <tr>
+      <td>{tesla.model}</td>
+      <td>{teslaTopSpeed}</td>
+      <td>{teslaTopColour}</td>
+    </tr>
+    <tr>
+      <td>{honda.model}</td>
+      <td>{hondaTopSpeed}</td>
+      <td>{hondaTopColour}</td>
+    </tr>
+  </table>,
+  document.getElementById("root")
+);
+
+```
