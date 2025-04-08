@@ -5523,16 +5523,16 @@ import React, { useState } from "react";
 
 function App() {
   const [headingText, setHeadingText] = useState("Hello");
-  const [backgroundStyle, setBackgroundStyle] = useState("white");
+  const [isMouseOver, setIsMouseOver] = useState(false);
   function handleClick() {
     setHeadingText("Submited");
   }
 
   function handleMouseOut() {
-    setBackgroundStyle("white");
+    setIsMouseOver(false);
   }
   function handleMouseOver() {
-    setBackgroundStyle("black");
+    setIsMouseOver(true);
   }
   return (
     <div className="container">
@@ -5542,7 +5542,7 @@ function App() {
         onClick={handleClick}
         onMouseOut={handleMouseOut}
         onMouseOver={handleMouseOver}
-        style={{ backgroundColor: backgroundStyle }}
+        style={{ backgroundColor: isMouseOver ? "black": "white" }}
       >
         Submit
       </button>
