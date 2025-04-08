@@ -5517,3 +5517,37 @@ function App() {
 
 export default App;
 ```
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [headingText, setHeadingText] = useState("Hello");
+  const [backgroundStyle, setBackgroundStyle] = useState("black");
+  function handleClick() {
+    setHeadingText("Submited");
+  }
+
+  function handleMouseOut() {
+    setBackgroundStyle("black");
+  }
+  function handleMouseOver() {
+    setBackgroundStyle("white");
+  }
+  return (
+    <div className="container">
+      <h1>{headingText}</h1>
+      <input type="text" placeholder="What's your name?" />
+      <button
+        onClick={handleClick}
+        onMouseOut={handleMouseOut}
+        onMouseOver={handleMouseOver}
+        style={{ backgroundColor: backgroundStyle }}      >
+        Submit
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
