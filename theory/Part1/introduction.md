@@ -5465,12 +5465,12 @@ import cars from "./practice";
 
 let [honda, tesla] = cars;
 const {
-  coloursByPopularity: teslaTopColour,
+  coloursByPopularity: {teslaTopColour},
   speedStats: { topSpeed: teslaTopSpeed },
 } = honda;
 
 const {
-  coloursByPopularity: hondaTopColour,
+  coloursByPopularity: {hondaTopColour},
   speedStats: { topSpeed: hondaTopSpeed },
 } = tesla;
 
@@ -5494,4 +5494,26 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+```
+
+### Handling events in React
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [headingText, setHeadingText] = useState("Hello");
+  function handleClick() {
+    setHeadingText("Submited");
+  }
+  return (
+    <div className="container">
+      <h1>{headingText}</h1>
+      <input type="text" placeholder="What's your name?" />
+      <button onClick={handleClick}>Submit</button>
+    </div>
+  );
+}
+
+export default App;
 ```
