@@ -5665,3 +5665,58 @@ function App() {
 
 export default App;
 ```
+
+#### Class and hook
+
+```
+import React from "react";
+
+class ClassComponent extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    };
+    this.increase = this.increase.bind(this);
+  }
+
+  increase() {
+    this.setState({ count: this.state.count + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.increase}>+</button>
+      </div>
+    );
+  }
+}
+
+export default ClassComponent;
+```
+```
+import React, { useState } from "react";
+
+function FunctionalComponent() {
+  const [count, setCount] = useState(0);
+
+  function increase() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={increase}>+</button>
+    </div>
+  );
+}
+
+export default FunctionalComponent;
+```
+
+https://legacy.reactjs.org/docs/state-and-lifecycle.html
+https://legacy.reactjs.org/docs/hooks-intro.html
+https://legacy.reactjs.org/docs/hooks-faq.html#should-i-use-hooks-classes-or-a-mix-of-both
