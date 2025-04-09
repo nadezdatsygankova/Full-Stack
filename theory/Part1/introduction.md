@@ -5599,3 +5599,33 @@ function App() {
 
 export default App;
 ```
+
+Control component
+https://legacy.reactjs.org/docs/forms.html#controlled-components
+
+```
+function App() {
+  const [name, setName] = useState("");
+  const [show, setShow] = useState(false);
+  function handleChange(event) {
+    setName(event.target.value);
+  }
+  function submit() {
+    setShow(true);
+  }
+  return (
+    <div className="container">
+      <h1>Hello {show && name}</h1>
+      <input
+        onChange={handleChange}
+        type="text"
+        placeholder="What's your name?"
+        value={name}
+      />
+      <button onClick={submit}>Submit</button>
+    </div>
+  );
+}
+
+export default App;
+```
