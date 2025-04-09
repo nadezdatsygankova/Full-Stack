@@ -5731,10 +5731,12 @@ function App() {
   const [lastName, setLastName] = useState("");
 
   function handleChangeFirstName(event) {
-    setFirstName(event.target.value);
+    const value = event.target.value;
+    setFirstName(value);
   }
   function handleChangeLastName(event) {
-    setLastName(event.target.value);
+    const value = event.target.value;
+    setLastName(value);
   }
   return (
     <div className="container">
@@ -5816,3 +5818,5 @@ function App() {
 
 export default App;
 ```
+
+Never use event.target.value; inside setName fuction
