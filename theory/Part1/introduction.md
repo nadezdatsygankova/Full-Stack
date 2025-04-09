@@ -5552,3 +5552,116 @@ function App() {
 
 export default App;
 ```
+
+#### React form
+```
+function App() {
+  function handleChange(event) {
+    console.log(event.target.value);
+  }
+  return (
+    <div className="container">
+      <h1>Hello </h1>
+      <input
+        onChange={handleChange}
+        type="text"
+        placeholder="What's your name?"
+      />
+      <button>Submit</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("");
+  function handleChange(event) {
+    setName(event.target.value);
+  }
+  return (
+    <div className="container">
+      <h1>Hello {name}</h1>
+      <input
+        onChange={handleChange}
+        type="text"
+        placeholder="What's your name?"
+        value={name}
+      />
+      <button>Submit</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Control component
+https://legacy.reactjs.org/docs/forms.html#controlled-components
+
+```
+function App() {
+  const [name, setName] = useState("");
+  const [show, setShow] = useState(false);
+  function handleChange(event) {
+    setName(event.target.value);
+  }
+  function submit() {
+    setShow(true);
+  }
+  return (
+    <div className="container">
+      <h1>Hello {show && name}</h1>
+      <input
+        onChange={handleChange}
+        type="text"
+        placeholder="What's your name?"
+        value={name}
+      />
+      <button onClick={submit}>Submit</button>
+    </div>
+  );
+}
+
+export default App;
+```
+```
+import React, { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("");
+  const [headingText, setHeading] = useState("");
+
+  function handleChange(event) {
+    console.log(event.target.value);
+    setName(event.target.value);
+  }
+
+  function handleClick(event) {
+    setHeading(name);
+
+    event.preventDefault();
+  }
+
+  return (
+    <div className="container">
+      <h1>Hello {headingText}</h1>
+      <form onSubmit={handleClick}>
+        <input
+          onChange={handleChange}
+          type="text"
+          placeholder="What's your name?"
+          value={name}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
+```
