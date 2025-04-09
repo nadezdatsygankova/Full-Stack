@@ -5665,3 +5665,158 @@ function App() {
 
 export default App;
 ```
+
+#### Class and hook
+
+```
+import React from "react";
+
+class ClassComponent extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    };
+    this.increase = this.increase.bind(this);
+  }
+
+  increase() {
+    this.setState({ count: this.state.count + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.increase}>+</button>
+      </div>
+    );
+  }
+}
+
+export default ClassComponent;
+```
+```
+import React, { useState } from "react";
+
+function FunctionalComponent() {
+  const [count, setCount] = useState(0);
+
+  function increase() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={increase}>+</button>
+    </div>
+  );
+}
+
+export default FunctionalComponent;
+```
+
+https://legacy.reactjs.org/docs/state-and-lifecycle.html
+https://legacy.reactjs.org/docs/hooks-intro.html
+https://legacy.reactjs.org/docs/hooks-faq.html#should-i-use-hooks-classes-or-a-mix-of-both
+
+### Changing complex state
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+
+  function handleChangeFirstName(event) {
+    const value = event.target.value;
+    setFirstName(value);
+  }
+  function handleChangeLastName(event) {
+    const value = event.target.value;
+    setLastName(value);
+  }
+  return (
+    <div className="container">
+      <h1>
+        Hello {firstName} {lastName}{" "}
+      </h1>
+      <form>
+        <input
+          onChange={handleChangeFirstName}
+          name="fName"
+          placeholder="First Name"
+        />
+        <input
+          onChange={handleChangeLastName}
+          name="lName"
+          placeholder="Last Name"
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
+```
+
+uncontrol and control component
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [fullName, setFullName] = useState({
+    fName: "",
+    lName: ""
+  });
+
+  function handleChange(event) {
+    const { value, name } = event.target;
+
+    setFullName(prevValue => {
+      if (name === "fName") {
+        return {
+          fName: value,
+          lName: prevValue.lName
+        };
+      } else if (name === "lName") {
+        return {
+          fName: prevValue.fName,
+          lname: value
+        };
+      }
+    });
+  }
+
+  return (
+    <div className="container">
+      <h1>
+        Hello {fullName.fName} {fullName.lName}
+      </h1>
+      <form>
+        <input
+          name="fName"
+          onChange={handleChange}
+          placeholder="First Name"
+          value={fullName.fName}
+        />
+        <input
+          name="lName"
+          onChange={handleChange}
+          placeholder="Last Name"
+          value={fullName.lName}
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Never use event.target.value; inside setName fuction
