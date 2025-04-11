@@ -5847,7 +5847,7 @@ function App() {
           lName: value,
           email: prevValue.email,
         };
-      } else {
+      } else if (name === "email") {
         return {
           fName: prevValue.fName,
           lName: prevValue.lName,
@@ -5890,3 +5890,6 @@ function App() {
 export default App;
 
 ```
+
+option hold - multiple highlites
+
