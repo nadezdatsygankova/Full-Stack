@@ -5893,3 +5893,16 @@ export default App;
 
 option hold - multiple highlites
 
+### spread operator
+
+```
+const citrus = ["orange", "lemon"];
+const fruits = ["apple", "banana", ...citrus];
+console.log(fruits);
+[
+    "apple",
+    "banana",
+    "orange",
+    "lemon"
+]
+```
