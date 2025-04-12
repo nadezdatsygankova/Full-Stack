@@ -5918,3 +5918,16 @@ const user = {
 };
 console.log(user);
 ```
+
+```
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setContact((prevValue) => {
+      return {
+        ...prevValue,
+        [name]: value,
+      };
+    });
+  }
+  ```
