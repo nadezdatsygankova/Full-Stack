@@ -5906,3 +5906,15 @@ console.log(fruits);
     "lemon"
 ]
 ```
+```
+const fName = {
+  fName: "James",
+  lName: "Bond",
+};
+
+const user = {
+  ...fName,
+  email: "test@gmail.com",
+};
+console.log(user);
+```
