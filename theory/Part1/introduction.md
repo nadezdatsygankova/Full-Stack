@@ -5974,3 +5974,23 @@ function App() {
 
 export default App;
 ```
+
+### divide
+```
+import React from "react";
+
+function TodoItem(props) {
+  return (
+    <div>
+      <ul>
+        {props.items.map((todoItem) => (
+          <li>{todoItem}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default TodoItem;
+
+```
