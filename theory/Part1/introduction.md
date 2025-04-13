@@ -5931,3 +5931,46 @@ console.log(user);
     });
   }
   ```
+### todo list React
+
+```
+import React, { useState } from "react";
+
+function App() {
+  const [task, setTask] = useState("");
+  const [list, setList] = useState([]);
+
+  function getTask(event) {
+    const { value } = event.target;
+    setTask(value);
+  }
+  function submitTask() {
+    if (task.trim() !== "") {
+      setList((prevList) => [...prevList, task]);
+      setTask("");
+    }
+  }
+  return (
+    <div className="container">
+      <div className="heading">
+        <h1>To-Do List</h1>
+      </div>
+      <div className="form">
+        <input onChange={getTask} type="text" value={task} />
+        <button onClick={submitTask}>
+          <span>Add</span>
+        </button>
+      </div>
+      <div>
+        <ul>
+          {list.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
