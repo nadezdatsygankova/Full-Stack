@@ -5994,3 +5994,35 @@ function TodoItem(props) {
 export default TodoItem;
 
 ```
+
+### Props is read only
+
+```
+import React, { useState } from "react";
+
+function TodoItem(props) {
+  const [isDone, setIsDone] = useState(false);
+
+  function toggleDone() {
+    setIsDone((prev) => !prev);
+  }
+
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+      <li
+        style={{
+          textDecoration: isDone ? "line-through" : "none",
+          listStyle: "none",
+          fontSize: "18px",
+        }}
+      >
+        {props.text}
+      </li>
+      <button onClick={toggleDone}>{isDone ? "Undo" : "Done"}</button>
+    </div>
+  );
+}
+
+export default TodoItem;
+
+```
