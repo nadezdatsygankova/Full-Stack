@@ -5994,3 +5994,5 @@ function TodoItem(props) {
 export default TodoItem;
 
 ```
+
+### Props is read only 
