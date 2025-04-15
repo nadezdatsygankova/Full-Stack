@@ -6076,3 +6076,6 @@ function TodoItem(props) {
 
 export default TodoItem;
 ```
+
+color: isDone ? "#888" : "#000"
+transition: "all 0.3s ease" 
