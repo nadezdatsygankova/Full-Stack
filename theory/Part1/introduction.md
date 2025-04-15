@@ -6026,3 +6026,53 @@ function TodoItem(props) {
 export default TodoItem;
 
 ```
+```
+import React, { useState } from "react";
+
+function TodoItem(props) {
+  const [isDone, setIsDone] = useState(false);
+
+  function toggleDone() {
+    setIsDone((prev) => !prev);
+  }
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "8px",
+      }}
+    >
+      <li
+        style={{
+          listStyle: "none",
+          fontSize: "18px",
+          color: isDone ? "#888" : "#000",
+          textDecoration: isDone ? "line-through" : "none",
+          transition: "all 0.3s ease", // Плавность
+        }}
+      >
+        {props.text}
+      </li>
+      <button
+        onClick={toggleDone}
+        style={{
+          padding: "6px 12px",
+          fontSize: "14px",
+          cursor: "pointer",
+          borderRadius: "6px",
+          border: "1px solid #ccc",
+          backgroundColor: isDone ? "#eee" : "#d4f4dd",
+          transition: "all 0.3s ease",
+        }}
+      >
+        {isDone ? "Undo" : "Done"}
+      </button>
+    </div>
+  );
+}
+
+export default TodoItem;
+```
