@@ -6078,4 +6078,28 @@ export default TodoItem;
 ```
 
 color: isDone ? "#888" : "#000"
-transition: "all 0.3s ease" 
+transition: "all 0.3s ease"
+
+version
+```
+import React, { useState } from "react";
+
+function TodoItem(props) {
+  const [isDone, setIsDone] = useState(false);
+
+  function clickHandle() {
+    setIsDone((prev) => {
+      return !prev;
+    });
+  }
+  return (
+    <div onClick={clickHandle}>
+      <li style={{ textDecoration: isDone ? "line-through" : "none" }}>
+        {props.item}
+      </li>
+    </div>
+  );
+}
+
+export default TodoItem;
+```
