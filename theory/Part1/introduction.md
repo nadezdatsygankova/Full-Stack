@@ -6078,4 +6078,102 @@ export default TodoItem;
 ```
 
 color: isDone ? "#888" : "#000"
-transition: "all 0.3s ease" 
+transition: "all 0.3s ease"
+
+version
+```
+import React, { useState } from "react";
+
+function TodoItem(props) {
+  const [isDone, setIsDone] = useState(false);
+
+  function clickHandle() {
+    setIsDone((prev) => {
+      return !prev;
+    });
+  }
+  return (
+    <div onClick={clickHandle}>
+      <li style={{ textDecoration: isDone ? "line-through" : "none" }}>
+        {props.item}
+      </li>
+    </div>
+  );
+}
+
+export default TodoItem;
+```
+
+```
+import React from "react";
+
+function ToDoItem(props) {
+  return (
+    <div
+      onClick={() => {
+        props.onChecked(props.id);
+      }}
+    >
+      <li>{props.text}</li>
+    </div>
+  );
+}
+
+export default ToDoItem;
+
+import React, { useState } from "react";
+import ToDoItem from "./ToDoItem";
+
+function App() {
+  const [inputText, setInputText] = useState("");
+  const [items, setItems] = useState([]);
+
+  function handleChange(event) {
+    const newValue = event.target.value;
+    setInputText(newValue);
+  }
+
+  function addItem() {
+    setItems(prevItems => {
+      return [...prevItems, inputText];
+    });
+    setInputText("");
+  }
+
+  function deleteItem(id) {
+    setItems(prevItems => {
+      return prevItems.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
+
+  return (
+    <div className="container">
+      <div className="heading">
+        <h1>To-Do List</h1>
+      </div>
+      <div className="form">
+        <input onChange={handleChange} type="text" value={inputText} />
+        <button onClick={addItem}>
+          <span>Add</span>
+        </button>
+      </div>
+      <div>
+        <ul>
+          {items.map((todoItem, index) => (
+            <ToDoItem
+              key={index}
+              id={index}
+              text={todoItem}
+              onChecked={deleteItem}
+            />
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
