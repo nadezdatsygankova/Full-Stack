@@ -6177,3 +6177,4 @@ function App() {
 
 export default App;
 ```
+### managing component tree
