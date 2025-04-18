@@ -6251,3 +6251,22 @@ function App() {
 export default App;
 
 ```
+
+### component
+```
+      <InputArea onAdd={addItem} />
+      <div>
+        <ul>
+          {items.map((todoItem, index) => (
+            <ToDoItem
+              key={index}
+              id={index}
+              text={todoItem}
+              onChecked={deleteItem}
+            />
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    ```
