@@ -6487,3 +6487,16 @@ Note.jsx
 
 import DeleteIcon from"@material-ui/icons/Delete";
 ```
+
+# Web3
+- Helium
+- Pool
+Blookchain - is it ledger
+record of how is own whom
+Jack -> Angela $10
+they need to agree
+and we need to trust
+
+we need to lock the ledger with encription (ceasar cipher)
+hashing uses a formula
+
