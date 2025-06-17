@@ -6500,3 +6500,34 @@ and we need to trust
 we need to lock the ledger with encription (ceasar cipher)
 hashing uses a formula
 
+Block ->
+we have a piece of data,
+Date,
+Name
+amount $10
+to Steph
+
+we generate a hash from this piece of data
+
+hash is indetify for all block
+
+In order for a block to be added to the blockchain, it has to satisfy some predetermined requrement (for example, the hash has to start out with three zeros)
+
+we need to update 'Nonce:', it is a number
+
+Nonce + Data + Prev => hash
+
+we can't change block
+
+https://csis.gmu.edu/albanese/labs/caesar_cypher.php
+https://www.movable-type.co.uk/scripts/sha256.html
+https://guggero.github.io/blockchain-demo/#!/block
+
+Distributing blockchain on multiple computers, we now have another way of ensuring the integraty of our data is absolutely correct and nobody has tampered with it.
+
+Distributed trustless ledger
+
+code can store in data
+
+
+
